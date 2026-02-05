@@ -74,6 +74,18 @@ switch ($route) {
         $controller->myCourses($BASE_PATH, $BASE_URL);
         break;
     default:
+        // Verificar rutas dinámicas
+        if (strpos($route, 'perfil/') === 0) {
+            require $BASE_PATH . '/app/Controllers/Web/PublicProfileController.php';
+            $controller = new \App\Controllers\Web\PublicProfileController();
+            $parts = explode('/', $route);
+            $username = isset($parts[1]) ? $parts[1] : '';
+            if ($username) {
+                $controller->index($BASE_PATH, $BASE_URL, $username);
+                break;
+            }
+        }
+
         http_response_code(404);
         include $BASE_PATH . '/views/layouts/web/header.php';
         echo '<div class="container"><div class="row"><div class="col-12"><h1>404 - Página no encontrada</h1></div></div></div>';
