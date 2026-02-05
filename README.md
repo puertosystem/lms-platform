@@ -1,6 +1,6 @@
-# LMS Project
+# lms-platform
 
-Este es el proyecto de sistema de gestión de aprendizaje (LMS).
+Sistema LMS desarrollado en PHP para cursos en línea, enfocado en la plataforma Tu Guía Digital.
 
 ## Estructura del Proyecto
 
