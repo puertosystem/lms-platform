@@ -2,7 +2,7 @@
         <!--=        Footer Area Start       	=-->
         <!--=====================================-->
         <!-- Start Footer Area  -->
-        <footer class="edu-footer footer-lighten bg-image footer-style-1">
+        <footer class="edu-footer footer-lighten bg-image footer-style-1 footer-fullwidth">
             <div class="footer-top">
                 <div class="container">
                     <div class="row g-5">
@@ -77,11 +77,21 @@
                 </div>
             </div>
             <div class="copyright-area">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="inner text-center">
-                                <p>Copyright 2024 <a href="https://1.envato.market/5bQ022" target="_blank">EduBlink</a> Designed By <a href="https://1.envato.market/YgGJbj" target="_blank">DevsBlink</a>. All Rights Reserved</p>
+                        <div class="col-lg-6">
+                            <div class="inner text-start">
+                                <p>Copyright 2025 <a href="https://pi.indecopi.gob.pe/consultatutramitedemarcas/#/consulta-certificado?params=U2FsdGVkX19n605SRvoI3hcmDwboghe0ovMYl8IjXOsyDSTdGMk%2BHpung1vLwNqSaAGwDJg3GMPBnhoy%2BQKCEvU98QP4d3Xg6%2B8vgSQ3too%3D" target="_blank">Tu Guia Digital</a> | Diseñado por: <a href="https://norbertoramirez.com/" target="_blank">Norberto Ramirez</a> & <a href="https://puertosystem.com/" target="_blank">Puerto System, S.A.</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-lg-end text-start">
+                            <div class="inner text-end">
+                                <p>                                   
+                                    <a href="<?php echo $baseUrl; ?>/anexo-de-privacidad">Anexo de privacidad | </a>
+                                    <a href="<?php echo $baseUrl; ?>/enlaces/docs">Docs | </a>
+                                    <a href="<?php echo $baseUrl; ?>/enlaces/website">Mapa del sitio</a>
+                                    <span class="d-none d-sm-inline-block"> | <b>Versión</b> 1.0.0</span>
+                                </p>
                             </div>
                         </div>
                     </div>

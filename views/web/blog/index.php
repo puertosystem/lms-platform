@@ -39,19 +39,19 @@
                         <div class="edu-blog blog-style-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                    <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                         <img src="<?php echo $baseUrl; ?>/assets/images/blog/blog-25.jpg" alt="Blog Images">
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">4 Learning Management System Design Tips...</a></h5>
+                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">4 Learning Management System Design Tips...</a></h5>
                                     <ul class="blog-meta">
                                         <li><i class="icon-27"></i>Oct 10, 2024</li>
                                         <li><i class="icon-28"></i>Com 09</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet cons tetur adip isicing sed eiusmod.</p>
                                     <div class="read-more-btn">
-                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/detalle-blog">Learn More <i class="icon-4"></i></a>
+                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/blog/detalle-blog">Learn More <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -59,19 +59,19 @@
                         <div class="edu-blog blog-style-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                    <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                         <img src="<?php echo $baseUrl; ?>/assets/images/blog/blog-26.jpg" alt="Blog Images">
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">How to Developers Taking the Guess Work...</a></h5>
+                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">How to Developers Taking the Guess Work...</a></h5>
                                     <ul class="blog-meta">
                                         <li><i class="icon-27"></i>Oct 10, 2024</li>
                                         <li><i class="icon-28"></i>Com 09</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet cons tetur adip isicing sed eiusmod.</p>
                                     <div class="read-more-btn">
-                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/detalle-blog">Learn More <i class="icon-4"></i></a>
+                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/blog/detalle-blog">Learn More <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -79,19 +79,19 @@
                         <div class="edu-blog blog-style-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                    <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                         <img src="<?php echo $baseUrl; ?>/assets/images/blog/blog-27.jpg" alt="Blog Images">
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">Ten Benefits Of Rentals That May Change Your...</a></h5>
+                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Ten Benefits Of Rentals That May Change Your...</a></h5>
                                     <ul class="blog-meta">
                                         <li><i class="icon-27"></i>Oct 10, 2024</li>
                                         <li><i class="icon-28"></i>Com 09</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet cons tetur adip isicing sed eiusmod.</p>
                                     <div class="read-more-btn">
-                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/detalle-blog">Learn More <i class="icon-4"></i></a>
+                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/blog/detalle-blog">Learn More <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -99,19 +99,19 @@
                         <div class="edu-blog blog-style-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                    <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                         <img src="<?php echo $baseUrl; ?>/assets/images/blog/blog-28.jpg" alt="Blog Images">
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">Fresh Inspiration For March And A Smashing...</a></h5>
+                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Fresh Inspiration For March And A Smashing...</a></h5>
                                     <ul class="blog-meta">
                                         <li><i class="icon-27"></i>Oct 10, 2024</li>
                                         <li><i class="icon-28"></i>Com 09</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet cons tetur adip isicing sed eiusmod.</p>
                                     <div class="read-more-btn">
-                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/detalle-blog">Learn More <i class="icon-4"></i></a>
+                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/blog/detalle-blog">Learn More <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -119,19 +119,19 @@
                         <div class="edu-blog blog-style-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                    <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                         <img src="<?php echo $baseUrl; ?>/assets/images/blog/blog-29.jpg" alt="Blog Images">
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">Fresh Inspiration For March And A Smashing...</a></h5>
+                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Fresh Inspiration For March And A Smashing...</a></h5>
                                     <ul class="blog-meta">
                                         <li><i class="icon-27"></i>Oct 10, 2024</li>
                                         <li><i class="icon-28"></i>Com 09</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet cons tetur adip isicing sed eiusmod.</p>
                                     <div class="read-more-btn">
-                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/detalle-blog">Learn More <i class="icon-4"></i></a>
+                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/blog/detalle-blog">Learn More <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -139,19 +139,19 @@
                         <div class="edu-blog blog-style-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                    <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                         <img src="<?php echo $baseUrl; ?>/assets/images/blog/blog-30.jpg" alt="Blog Images">
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">How to Developers Taking the Guess Work...</a></h5>
+                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">How to Developers Taking the Guess Work...</a></h5>
                                     <ul class="blog-meta">
                                         <li><i class="icon-27"></i>Oct 10, 2024</li>
                                         <li><i class="icon-28"></i>Com 09</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet cons tetur adip isicing sed eiusmod.</p>
                                     <div class="read-more-btn">
-                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/detalle-blog">Learn More <i class="icon-4"></i></a>
+                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/blog/detalle-blog">Learn More <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -159,19 +159,19 @@
                         <div class="edu-blog blog-style-list" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                    <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                         <img src="<?php echo $baseUrl; ?>/assets/images/blog/blog-31.jpg" alt="Blog Images">
                                     </a>
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">Ten Benefits Of Rentals That May Change...</a></h5>
+                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Ten Benefits Of Rentals That May Change...</a></h5>
                                     <ul class="blog-meta">
                                         <li><i class="icon-27"></i>Oct 10, 2024</li>
                                         <li><i class="icon-28"></i>Com 09</li>
                                     </ul>
                                     <p>Lorem ipsum dolor sit amet cons tetur adip isicing sed eiusmod.</p>
                                     <div class="read-more-btn">
-                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/detalle-blog">Learn More <i class="icon-4"></i></a>
+                                        <a class="edu-btn btn-border btn-medium" href="<?php echo $baseUrl; ?>/blog/detalle-blog">Learn More <i class="icon-4"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -211,12 +211,12 @@
                                     <div class="content latest-post-list">
                                         <div class="latest-post">
                                             <div class="thumbnail">
-                                                <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                                <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                                     <img src="<?php echo $baseUrl; ?>/assets/images/blog/small-post-01.jpg" alt="Blog Images">
                                                 </a>
                                             </div>
                                             <div class="post-content">
-                                                <h6 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">Instructional Design &amp; Adult Learners</a></h6>
+                                                <h6 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Instructional Design &amp; Adult Learners</a></h6>
                                                 <ul class="blog-meta">
                                                     <li><i class="icon-27"></i>22 Nov, 2024</li>
                                                 </ul>
@@ -224,12 +224,12 @@
                                         </div>
                                         <div class="latest-post">
                                             <div class="thumbnail">
-                                                <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                                <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                                     <img src="<?php echo $baseUrl; ?>/assets/images/blog/small-post-02.jpg" alt="Blog Images">
                                                 </a>
                                             </div>
                                             <div class="post-content">
-                                                <h6 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">Believe in Yourself! Have Faith!</a></h6>
+                                                <h6 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Believe in Yourself! Have Faith!</a></h6>
                                                 <ul class="blog-meta">
                                                     <li><i class="icon-27"></i>22 Nov, 2024</li>
                                                 </ul>
@@ -237,12 +237,12 @@
                                         </div>
                                         <div class="latest-post">
                                             <div class="thumbnail">
-                                                <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                                <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                                     <img src="<?php echo $baseUrl; ?>/assets/images/blog/small-post-03.jpg" alt="Blog Images">
                                                 </a>
                                             </div>
                                             <div class="post-content">
-                                                <h6 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">Live Online Lessons & eLearning</a></h6>
+                                                <h6 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Live Online Lessons & eLearning</a></h6>
                                                 <ul class="blog-meta">
                                                     <li><i class="icon-27"></i>22 Nov, 2024</li>
                                                 </ul>

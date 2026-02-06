@@ -234,12 +234,12 @@
                             <div class="content latest-post-list">
                                 <div class="latest-post">
                                     <div class="thumbnail">
-                                        <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                        <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                             <img src="<?php echo $baseUrl; ?>/assets/images/blog/small-post-01.jpg" alt="Blog Images">
                                         </a>
                                     </div>
                                     <div class="post-content">
-                                        <h6 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">Instructional Design &amp; Adult Learners</a></h6>
+                                        <h6 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Instructional Design &amp; Adult Learners</a></h6>
                                         <ul class="blog-meta">
                                             <li><i class="icon-27"></i>22 Nov, 2024</li>
                                         </ul>
@@ -247,12 +247,12 @@
                                 </div>
                                 <div class="latest-post">
                                     <div class="thumbnail">
-                                        <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                        <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                             <img src="<?php echo $baseUrl; ?>/assets/images/blog/small-post-02.jpg" alt="Blog Images">
                                         </a>
                                     </div>
                                     <div class="post-content">
-                                        <h6 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">Believe in Yourself! Have Faith!</a></h6>
+                                        <h6 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Believe in Yourself! Have Faith!</a></h6>
                                         <ul class="blog-meta">
                                             <li><i class="icon-27"></i>22 Nov, 2024</li>
                                         </ul>
@@ -260,12 +260,12 @@
                                 </div>
                                 <div class="latest-post">
                                     <div class="thumbnail">
-                                        <a href="<?php echo $baseUrl; ?>/detalle-blog">
+                                        <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                             <img src="<?php echo $baseUrl; ?>/assets/images/blog/small-post-03.jpg" alt="Blog Images">
                                         </a>
                                     </div>
                                     <div class="post-content">
-                                        <h6 class="title"><a href="<?php echo $baseUrl; ?>/detalle-blog">Live Online Lessons & eLearning</a></h6>
+                                        <h6 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Live Online Lessons & eLearning</a></h6>
                                         <ul class="blog-meta">
                                             <li><i class="icon-27"></i>22 Nov, 2024</li>
                                         </ul>

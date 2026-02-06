@@ -327,7 +327,7 @@
                         <div class="edu-course course-style-1 hover-button-bg-white">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                                    <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">
                                         <img src="assets/images/course/course-07.jpg" alt="Course Meta">
                                     </a>
                                     <div class="time-top">
@@ -337,7 +337,7 @@
                                 <div class="content">
                                     <span class="course-level">Advanced</span>
                                     <h6 class="title">
-                                        <a href="<?php echo $baseUrl; ?>/detalle-curso">Starting SEO as your Home Based Business</a>
+                                        <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Starting SEO as your Home Based Business</a>
                                     </h6>
                                     <div class="course-rating">
                                         <div class="rating">
@@ -393,7 +393,7 @@
                         <div class="edu-course course-style-1 hover-button-bg-white">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                                    <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">
                                         <img src="assets/images/course/course-04.jpg" alt="Course Meta">
                                     </a>
                                     <div class="time-top">
@@ -403,7 +403,7 @@
                                 <div class="content">
                                     <span class="course-level">Beginner</span>
                                     <h6 class="title">
-                                        <a href="<?php echo $baseUrl; ?>/detalle-curso">Java Programming Masterclass for Software Developers</a>
+                                        <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Java Programming Masterclass for Software Developers</a>
                                     </h6>
                                     <div class="course-rating">
                                         <div class="rating">
@@ -459,7 +459,7 @@
                         <div class="edu-course course-style-1 hover-button-bg-white">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                                    <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">
                                         <img src="assets/images/course/course-05.jpg" alt="Course Meta">
                                     </a>
                                     <div class="time-top">
@@ -469,7 +469,7 @@
                                 <div class="content">
                                     <span class="course-level">Advanced</span>
                                     <h6 class="title">
-                                        <a href="<?php echo $baseUrl; ?>/detalle-curso">Building A Better World One Student At A Time</a>
+                                        <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Building A Better World One Student At A Time</a>
                                     </h6>
                                     <div class="course-rating">
                                         <div class="rating">
@@ -525,7 +525,7 @@
                         <div class="edu-course course-style-1 hover-button-bg-white">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                                    <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">
                                         <img src="assets/images/course/course-06.jpg" alt="Course Meta">
                                     </a>
                                     <div class="time-top">
@@ -535,7 +535,7 @@
                                 <div class="content">
                                     <span class="course-level">Intermediate</span>
                                     <h6 class="title">
-                                        <a href="<?php echo $baseUrl; ?>/detalle-curso">Master Your Personal Brand Like a Marketing Pro</a>
+                                        <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Master Your Personal Brand Like a Marketing Pro</a>
                                     </h6>
                                     <div class="course-rating">
                                         <div class="rating">
@@ -1014,18 +1014,18 @@
                         <div class="edu-blog blog-style-1">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="blog-details.html">
+                                    <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                         <img src="assets/images/blog/blog-01.jpg" alt="Blog Images">
                                     </a>
                                 </div>
                                 <div class="content position-top">
                                     <div class="read-more-btn">
-                                        <a class="btn-icon-round" href="blog-details.html"><i class="icon-4"></i></a>
+                                        <a class="btn-icon-round" href="<?php echo $baseUrl; ?>/blog/detalle-blog"><i class="icon-4"></i></a>
                                     </div>
                                     <div class="category-wrap">
                                         <a href="#" class="blog-category">ONLINE</a>
                                     </div>
-                                    <h5 class="title"><a href="blog-details.html">Become a Better Blogger: Content Planning</a></h5>
+                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Become a Better Blogger: Content Planning</a></h5>
                                     <ul class="blog-meta">
                                         <li><i class="icon-27"></i>Oct 10, 2024</li>
                                         <li><i class="icon-28"></i>Com 09</li>
@@ -1041,18 +1041,18 @@
                         <div class="edu-blog blog-style-1">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="blog-details.html">
+                                    <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                         <img src="assets/images/blog/blog-02.jpg" alt="Blog Images">
                                     </a>
                                 </div>
                                 <div class="content position-top">
                                     <div class="read-more-btn">
-                                        <a class="btn-icon-round" href="blog-details.html"><i class="icon-4"></i></a>
+                                        <a class="btn-icon-round" href="<?php echo $baseUrl; ?>/blog/detalle-blog"><i class="icon-4"></i></a>
                                     </div>
                                     <div class="category-wrap">
                                         <a href="#" class="blog-category">LECTURE</a>
                                     </div>
-                                    <h5 class="title"><a href="blog-details.html">How to Keep Workouts Fresh in the Morning</a></h5>
+                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">How to Keep Workouts Fresh in the Morning</a></h5>
                                     <ul class="blog-meta">
                                         <li><i class="icon-27"></i>Oct 10, 2024</li>
                                         <li><i class="icon-28"></i>Com 09</li>
@@ -1068,18 +1068,18 @@
                         <div class="edu-blog blog-style-1">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a href="blog-details.html">
+                                    <a href="<?php echo $baseUrl; ?>/blog/detalle-blog">
                                         <img src="assets/images/blog/blog-03.jpg" alt="Blog Images">
                                     </a>
                                 </div>
                                 <div class="content position-top">
                                     <div class="read-more-btn">
-                                        <a class="btn-icon-round" href="blog-details.html"><i class="icon-4"></i></a>
+                                        <a class="btn-icon-round" href="<?php echo $baseUrl; ?>/blog/detalle-blog"><i class="icon-4"></i></a>
                                     </div>
                                     <div class="category-wrap">
                                         <a href="#" class="blog-category">BUSINESS</a>
                                     </div>
-                                    <h5 class="title"><a href="blog-details.html">Four Ways to Keep Your Workout Routine Fresh</a></h5>
+                                    <h5 class="title"><a href="<?php echo $baseUrl; ?>/blog/detalle-blog">Four Ways to Keep Your Workout Routine Fresh</a></h5>
                                     <ul class="blog-meta">
                                         <li><i class="icon-27"></i>Oct 10, 2024</li>
                                         <li><i class="icon-28"></i>Com 09</li>

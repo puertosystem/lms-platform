@@ -133,13 +133,13 @@
                                     </a>
                                 </li>
                                 <li class="icon cart-icon">
-                                    <a href="<?php echo $baseUrl; ?>/carrito" class="cart-icon">
+                                    <a href="<?php echo $baseUrl; ?>/tienda/carrito" class="cart-icon">
                                         <i class="icon-3"></i>
                                         <span class="count">0</span>
                                     </a>
                                 </li>
                                 <li class="header-btn">
-                                    <a href="<?php echo $baseUrl; ?>/contacto" class="edu-btn btn-medium">Aula Virtual <i class="icon-4"></i></a>
+                                    <a href="<?php echo $baseUrl; ?>/aula-virtual" target="_blank" class="edu-btn btn-medium">Aula Virtual <i class="icon-4"></i></a>
                                 </li>
                                 <li class="mobile-menu-bar d-block d-xl-none">
                                     <button class="hamberger-button">

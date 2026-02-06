@@ -263,7 +263,7 @@
                 <div class="edu-course course-style-4 course-style-14">
                     <div class="inner">
                         <div class="thumbnail">
-                            <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                            <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">
                                 <img src="<?php echo $baseUrl; ?>/assets/images/course/course-12.jpg" alt="Course Meta">
                             </a>
                             <div class="time-top">
@@ -273,7 +273,7 @@
                         <div class="content">
                             <div class="course-price">$29.00</div>
                             <h6 class="title">
-                                <a href="<?php echo $baseUrl; ?>/detalle-curso">Java Programming Masterclass for Software Developers</a>
+                                <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Java Programming Masterclass for Software Developers</a>
                             </h6>
                             <div class="course-rating">
                                 <div class="rating">
@@ -296,7 +296,7 @@
                         <div class="content">
                             <span class="course-level">Engineering</span>
                             <h5 class="title">
-                                <a href="<?php echo $baseUrl; ?>/detalle-curso">Java Programming Masterclass for Software Developers</a>
+                                <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Java Programming Masterclass for Software Developers</a>
                             </h5>
                             <div class="course-rating">
                                 <div class="rating">
@@ -331,7 +331,7 @@
                 <div class="edu-course course-style-4 course-style-14">
                     <div class="inner">
                         <div class="thumbnail">
-                            <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                            <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">
                                 <img src="<?php echo $baseUrl; ?>/assets/images/course/course-42.jpg" alt="Course Meta">
                             </a>
                             <div class="time-top">
@@ -341,7 +341,7 @@
                         <div class="content">
                             <div class="course-price">$29.00</div>
                             <h6 class="title">
-                                <a href="<?php echo $baseUrl; ?>/detalle-curso">Build Responsive Real-World Websites with HTML & CSS</a>
+                                <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Build Responsive Real-World Websites with HTML & CSS</a>
                             </h6>
                             <div class="course-rating">
                                 <div class="rating">
@@ -364,7 +364,7 @@
                         <div class="content">
                             <span class="course-level">Engineering</span>
                             <h5 class="title">
-                                <a href="<?php echo $baseUrl; ?>/detalle-curso">Build Responsive Real-World Websites with HTML & CSS</a>
+                                <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Build Responsive Real-World Websites with HTML & CSS</a>
                             </h5>
                             <div class="course-rating">
                                 <div class="rating">
@@ -399,7 +399,7 @@
                 <div class="edu-course course-style-4 course-style-14">
                     <div class="inner">
                         <div class="thumbnail">
-                            <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                            <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">
                                 <img src="<?php echo $baseUrl; ?>/assets/images/course/course-43.jpg" alt="Course Meta">
                             </a>
                             <div class="time-top">
@@ -409,7 +409,7 @@
                         <div class="content">
                             <div class="course-price">$29.00</div>
                             <h6 class="title">
-                                <a href="<?php echo $baseUrl; ?>/detalle-curso">C Programming For Beginners - Master the C Language</a>
+                                <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">C Programming For Beginners - Master the C Language</a>
                             </h6>
                             <div class="course-rating">
                                 <div class="rating">
@@ -432,7 +432,7 @@
                         <div class="content">
                             <span class="course-level">Engineering</span>
                             <h5 class="title">
-                                <a href="<?php echo $baseUrl; ?>/detalle-curso">C Programming For Beginners - Master the C Language</a>
+                                <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">C Programming For Beginners - Master the C Language</a>
                             </h5>
                             <div class="course-rating">
                                 <div class="rating">
@@ -467,7 +467,7 @@
                 <div class="edu-course course-style-4 course-style-14">
                     <div class="inner">
                         <div class="thumbnail">
-                            <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                            <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">
                                 <img src="<?php echo $baseUrl; ?>/assets/images/course/course-44.jpg" alt="Course Meta">
                             </a>
                             <div class="time-top">
@@ -477,7 +477,7 @@
                         <div class="content">
                             <div class="course-price">$29.00</div>
                             <h6 class="title">
-                                <a href="<?php echo $baseUrl; ?>/detalle-curso">Vue - The Complete Guide (w/ Router, Composition API)</a>
+                                <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Vue - The Complete Guide (w/ Router, Composition API)</a>
                             </h6>
                             <div class="course-rating">
                                 <div class="rating">
@@ -500,7 +500,7 @@
                         <div class="content">
                             <span class="course-level">Engineering</span>
                             <h5 class="title">
-                                <a href="<?php echo $baseUrl; ?>/detalle-curso">Vue - The Complete Guide (w/ Router, Composition API)</a>
+                                <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Vue - The Complete Guide (w/ Router, Composition API)</a>
                             </h5>
                             <div class="course-rating">
                                 <div class="rating">
@@ -535,7 +535,7 @@
                 <div class="edu-course course-style-4 course-style-14">
                     <div class="inner">
                         <div class="thumbnail">
-                            <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                            <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">
                                 <img src="<?php echo $baseUrl; ?>/assets/images/course/course-45.jpg" alt="Course Meta">
                             </a>
                             <div class="time-top">
@@ -545,7 +545,7 @@
                         <div class="content">
                             <div class="course-price">$29.00</div>
                             <h6 class="title">
-                                <a href="<?php echo $baseUrl; ?>/detalle-curso">Master Microservices with Spring Boot & Spring Cloud</a>
+                                <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Master Microservices with Spring Boot & Spring Cloud</a>
                             </h6>
                             <div class="course-rating">
                                 <div class="rating">
@@ -568,7 +568,7 @@
                         <div class="content">
                             <span class="course-level">Engineering</span>
                             <h5 class="title">
-                                <a href="<?php echo $baseUrl; ?>/detalle-curso">Master Microservices with Spring Boot & Spring Cloud</a>
+                                <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Master Microservices with Spring Boot & Spring Cloud</a>
                             </h5>
                             <div class="course-rating">
                                 <div class="rating">

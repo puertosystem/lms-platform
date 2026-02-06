@@ -1,4 +1,4 @@
-<?php include 'includes/course-details/banner.php'; ?>
+<?php include 'partials/banner.php'; ?>
 
 <!--=====================================-->
 <!--=     Courses Details Area Start    =-->
@@ -25,22 +25,22 @@
 
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
-                            <?php include 'includes/course-details/descripcion.php'; ?>
+                            <?php include 'partials/descripcion.php'; ?>
                         </div>
                         <div class="tab-pane fade" id="carriculam" role="tabpanel" aria-labelledby="carriculam-tab">
-                            <?php include 'includes/course-details/temario.php'; ?>
+                            <?php include 'partials/temario.php'; ?>
                         </div>
                         <div class="tab-pane fade" id="instructor" role="tabpanel" aria-labelledby="instructor-tab">
-                            <?php include 'includes/course-details/instructor.php'; ?>
+                            <?php include 'partials/instructor.php'; ?>
                         </div>
                         <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
-                            <?php include 'includes/course-details/reviews.php'; ?>
+                            <?php include 'partials/reviews.php'; ?>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <?php include 'includes/course-details/info.php'; ?>
+                <?php include 'partials/info.php'; ?>
             </div>
         </div>
     </div>

@@ -1,0 +1,106 @@
+.login-container {
+    background: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.login-form-section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.login-content {
+    width: 100%;
+    max-width: 400px;
+    z-index: 2;
+}
+.login-illustration-section {
+    background-color: #eefbf3; /* Light green/blue bg */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.login-illustration-section img {
+    max-width: 80%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+.login-logo {
+    margin-bottom: 40px;
+}
+.form-group {
+    margin-bottom: 25px;
+}
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+    font-size: 14px;
+}
+.form-control {
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 12px 15px;
+    height: 50px;
+    font-size: 14px;
+}
+.form-control:focus {
+    background-color: #fff;
+    border-color: var(--color-primary);
+    box-shadow: none;
+}
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+}
+.forgot-password a {
+    color: #ff5a5f; /* Specific color from image hint */
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn-login {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    border: none;
+}
+.btn-login:hover {
+    color: #fff;
+}
+.decorator-circle {
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: repeating-linear-gradient(45deg, #fcece8, #fcece8 5px, transparent 5px, transparent 10px);
+    border-radius: 50%;
+    z-index: 1;
+}
+/* Custom styles to match the mockup */
+.login-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+.login-subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 30px;
+}

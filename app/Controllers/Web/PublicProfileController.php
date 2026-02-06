@@ -58,7 +58,7 @@ class PublicProfileController {
         
         // Load view
         include $BASE_PATH . '/views/layouts/web/header.php';
-        require $BASE_PATH . '/views/web/public_profile.php';
+        require $BASE_PATH . '/views/web/user/public.php';
         include $BASE_PATH . '/views/layouts/web/footer.php';
     }
 }

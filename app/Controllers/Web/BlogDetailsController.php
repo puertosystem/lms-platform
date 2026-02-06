@@ -7,7 +7,7 @@ class BlogDetailsController {
         // usando un ID pasado por parámetro. Por ahora mostramos la vista estática.
         
         include $basePath . '/views/layouts/web/header.php';
-        include $basePath . '/views/web/blog-details.php';
+        include $basePath . '/views/web/blog/details.php';
         include $basePath . '/views/layouts/web/footer.php';
     }
 }

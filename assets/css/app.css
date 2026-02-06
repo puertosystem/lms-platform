@@ -42112,3 +42112,21 @@ html[dir="rtl"] .swiper-wrapper-inner-map {
 }
 
 /* Custom Sidebar Active State - REMOVED to use FAQ styles */
+
+/* Custom Footer Fullwidth */
+.edu-footer.footer-fullwidth .copyright-area {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+@media only screen and (max-width: 1350px) {
+    .edu-footer.footer-fullwidth .copyright-area {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .edu-footer.footer-fullwidth .copyright-area {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -50,10 +50,10 @@
                             <a href="#" class="remove-wishlist"><i class="icon-73"></i></a>
                         </td>
                         <td class="product-thumbnail">
-                            <a href="<?php echo $baseUrl; ?>/detalle-curso"><img src="<?php echo $baseUrl; ?>/assets/images/shop/product-02.jpg" alt="Books"></a>
+                            <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso"><img src="<?php echo $baseUrl; ?>/assets/images/shop/product-02.jpg" alt="Books"></a>
                         </td>
                         <td class="product-title">
-                            <a href="<?php echo $baseUrl; ?>/detalle-curso">Natural Science Project</a>
+                            <a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">Natural Science Project</a>
                         </td>
                         <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>70.30</td>
                         <td class="product-quantity" data-title="Qty">
@@ -65,8 +65,8 @@
                     </tr>
                     <tr>
                         <td class="product-remove"><a href="#" class="remove-wishlist"><i class="icon-73"></i></a></td>
-                        <td class="product-thumbnail"><a href="<?php echo $baseUrl; ?>/detalle-curso"><img src="<?php echo $baseUrl; ?>/assets/images/shop/product-03.jpg" alt="Digital Product"></a></td>
-                        <td class="product-title"><a href="<?php echo $baseUrl; ?>/detalle-curso">The King of Drugs</a></td>
+                        <td class="product-thumbnail"><a href="<?php echo $baseUrl; ?>/cursos/detalle-curso"><img src="<?php echo $baseUrl; ?>/assets/images/shop/product-03.jpg" alt="Digital Product"></a></td>
+                        <td class="product-title"><a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">The King of Drugs</a></td>
                         <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>70.00</td>
                         <td class="product-quantity" data-title="Qty">
                             <div class="pro-qty">
@@ -77,8 +77,8 @@
                     </tr>
                     <tr>
                         <td class="product-remove"><a href="#" class="remove-wishlist"><i class="icon-73"></i></a></td>
-                        <td class="product-thumbnail"><a href="<?php echo $baseUrl; ?>/detalle-curso"><img src="<?php echo $baseUrl; ?>/assets/images/shop/product-06.jpg" alt="Digital Product"></a></td>
-                        <td class="product-title"><a href="<?php echo $baseUrl; ?>/detalle-curso">The Silver Chair</a></td>
+                        <td class="product-thumbnail"><a href="<?php echo $baseUrl; ?>/cursos/detalle-curso"><img src="<?php echo $baseUrl; ?>/assets/images/shop/product-06.jpg" alt="Digital Product"></a></td>
+                        <td class="product-title"><a href="<?php echo $baseUrl; ?>/cursos/detalle-curso">The Silver Chair</a></td>
                         <td class="product-price" data-title="Price"><span class="currency-symbol">$</span>70.00</td>
                         <td class="product-quantity" data-title="Qty">
                             <div class="pro-qty">
@@ -117,7 +117,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="<?php echo $baseUrl; ?>/checkout" class="edu-btn btn-medium checkout-btn">Process to Checkout <i class="icon-4"></i></a>
+                    <a href="<?php echo $baseUrl; ?>/tienda/checkout" class="edu-btn btn-medium checkout-btn">Process to Checkout <i class="icon-4"></i></a>
                 </div>
             </div>
         </div>
