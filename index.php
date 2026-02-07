@@ -102,6 +102,32 @@ switch ($route) {
         include $BASE_PATH . '/views/web/privacy/terms.php';
         include $BASE_PATH . '/views/layouts/web/footer.php';
         break;
+    case 'instructores':
+        $title = "Instructores";
+        $baseUrl = $BASE_URL;
+        include $BASE_PATH . '/views/layouts/web/header.php';
+        include $BASE_PATH . '/views/web/instructors/index.php';
+        include $BASE_PATH . '/views/layouts/web/footer.php';
+        break;
+    case 'instructores/detalle':
+        $title = "Detalle del Instructor";
+        $baseUrl = $BASE_URL;
+        include $BASE_PATH . '/views/layouts/web/header.php';
+        include $BASE_PATH . '/views/web/instructors/details.php';
+        include $BASE_PATH . '/views/layouts/web/footer.php';
+        break;
+    case 'guia-de-compra':
+        $title = "Guía de Compra";
+        $baseUrl = $BASE_URL;
+        include $BASE_PATH . '/views/layouts/web/header.php';
+        include $BASE_PATH . '/views/web/guides/purchase-guide.php';
+        include $BASE_PATH . '/views/layouts/web/footer.php';
+        break;
+    case 'aula-virtual/curso/ver':
+        $courseTitle = "Curso de ejemplo";
+        $baseUrl = $BASE_URL;
+        include $BASE_PATH . '/views/classroom/watch/index.php';
+        break;
     default:
         // Verificar rutas dinámicas
         

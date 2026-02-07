@@ -4,7 +4,7 @@
         <!-- Start Footer Area  -->
         <footer class="edu-footer footer-lighten bg-image footer-style-1 footer-fullwidth">
             <div class="footer-top">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row g-5">
                         <div class="col-lg-3 col-md-6">
                             <div class="edu-footer-widget">
@@ -26,37 +26,33 @@
                         </div>
                         <div class="col-lg-3 col-sm-6">
                             <div class="edu-footer-widget explore-widget">
-                                <h4 class="widget-title">Online Platform</h4>
+                                <h4 class="widget-title">Nuestra Plataforma</h4>
                                 <div class="inner">
                                     <ul class="footer-link link-hover">
-                                        <li><a href="<?php echo $baseUrl; ?>/nosotros">About</a></li>
-                                        <li><a href="<?php echo $baseUrl; ?>/cursos">Courses</a></li>
-                                        <li><a href="team-one.html">Instructor</a></li>
-                                        <li><a href="event-grid.html">Events</a></li>
-                                        <li><a href="team-details.html">Instructor Profile</a></li>
-                                        <li><a href="purchase-guide.html">Purchase Guide</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>/nosotros">Quienes Somos</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>/cursos">Cursos</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>/instructores">Instructores</a></li>                                        
+                                        <li><a href="<?php echo $baseUrl; ?>/guia-de-compra">Guia de Compra</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-sm-6">
                             <div class="edu-footer-widget quick-link-widget">
-                                <h4 class="widget-title">Links</h4>
+                                <h4 class="widget-title">Enlaces Rápidos</h4>
                                 <div class="inner">
                                     <ul class="footer-link link-hover">
-                                        <li><a href="<?php echo $baseUrl; ?>/contacto">Contact Us</a></li>
-                                        <li><a href="gallery-grid.html">Gallery</a></li>
-                                        <li><a href="<?php echo $baseUrl; ?>/blog">News & Articles</a></li>
-                                        <li><a href="<?php echo $baseUrl; ?>/faq">FAQ's</a></li>
-                                        <li><a href="my-account.html">Sign In/Registration</a></li>
-                                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>/contacto">Contacto</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>/blog">Noticias & Artículos</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>/faq">Preguntas Frecuentes</a></li>
+                                        <li><a href="<?php echo $baseUrl; ?>/aula-virtual" target="_blank">Iniciar Sesión</a></li>                                    
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="edu-footer-widget">
-                                <h4 class="widget-title">Contacts</h4>
+                                <h4 class="widget-title">Contactanos</h4>
                                 <div class="inner">
                                     <p class="description">Enter your email address to register to our newsletter subscription</p>
                                     <div class="input-group footer-subscription-form">

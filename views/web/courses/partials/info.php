@@ -47,7 +47,7 @@
                     </li>
                 </ul>
                 <div class="read-more-btn">
-                    <a href="#" class="edu-btn">Start Now <i class="icon-4"></i></a>
+                    <a href="<?php echo $baseUrl; ?>/aula-virtual/curso/ver" class="edu-btn">Start Now <i class="icon-4"></i></a>
                 </div>
                 <div class="share-area">
                     <h4 class="title">Share On:</h4>

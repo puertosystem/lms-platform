@@ -204,29 +204,34 @@
                         </div>
                         <div class="modal-body">
                             <div class="login-form-box">
-                                <h3 class="title">Sign in</h3>
-                                <p>Don’t have an account? <a href="#">Sign up</a></p>
-                                <form>
+                                <h3 class="title">Iniciar sesión</h3>
+                                <p>¿No tienes una cuenta? <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">Regístrate</a></p>
+                                <form id="login-form-modal">
                                     <div class="form-group">
-                                        <label for="current-log-email">Username or email*</label>
-                                        <input type="email" name="current-log-email" id="current-log-email" placeholder="Email or username">
+                                        <label for="current-log-email">Usuario o correo electrónico*</label>
+                                        <input type="email" name="current-log-email" id="current-log-email" placeholder="Email o usuario">
                                     </div>
                                     <div class="form-group">
-                                        <label for="current-log-password">Password*</label>
-                                        <input type="password" name="current-log-password" id="current-log-password" placeholder="Password">
+                                        <label for="current-log-password">Contraseña*</label>
+                                        <input type="password" name="current-log-password" id="current-log-password" placeholder="Contraseña">
                                         <span class="password-show"><i class="icon-76"></i></span>
                                     </div>
                                     <div class="form-group chekbox-area">
                                         <div class="edu-form-check">
                                             <input type="checkbox" id="remember-me">
-                                            <label for="remember-me">Remember Me</label>
+                                            <label for="remember-me">Recuérdame</label>
                                         </div>
-                                        <a href="#" class="password-reset">Lost your password?</a>
+                                        <a href="#" class="password-reset">¿Olvidaste tu contraseña?</a>
                                     </div>
                                     <div class="form-group">
-                                        <button type="button" class="edu-btn btn-medium">Sign in <i class="icon-4"></i></button>
+                                        <button type="button" id="btn-login-modal-submit" class="edu-btn btn-medium">Iniciar sesión <i class="icon-4"></i></button>
                                     </div>
                                 </form>
+                                <div id="login-modal-success-msg" style="display:none;" class="text-center">
+                                    <h4 class="title text-success" style="color: #1ab69d;">¡Bienvenido!</h4>
+                                    <p>Sesión iniciada correctamente.</p>
+                                    <p>Redirigiendo a tu perfil...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -242,35 +247,88 @@
                         </div>
                         <div class="modal-body">
                             <div class="login-form-box registration-form">
-                                <h3 class="title">Registration</h3>
-                                <p>Already have an account? <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Sign in</a></p>
-                                <form>
+                                <h3 class="title">Registrarse</h3>
+                                <p>¿Ya tienes una cuenta? <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Iniciar sesión</a></p>
+                                <form id="register-form-modal">
                                     <div class="form-group">
-                                        <label for="reg-name">Name*</label>
-                                        <input type="text" name="reg-name" id="reg-name" placeholder="Full name">
+                                        <label for="reg-name">Nombre completo*</label>
+                                        <input type="text" name="reg-name" id="reg-name" placeholder="Nombre completo">
                                     </div>
                                     <div class="form-group">
-                                        <label for="log-email">Username or email*</label>
-                                        <input type="email" name="log-email" id="log-email" placeholder="Email or username">
+                                        <label for="log-email">Usuario o correo electrónico*</label>
+                                        <input type="email" name="log-email" id="log-email" placeholder="Email o usuario">
                                     </div>
                                     <div class="form-group">
-                                        <label for="log-password">Password*</label>
-                                        <input type="password" name="log-password" id="log-password" placeholder="Password">
+                                        <label for="log-password">Contraseña*</label>
+                                        <input type="password" name="log-password" id="log-password" placeholder="Contraseña">
                                         <span class="password-show"><i class="icon-76"></i></span>
                                     </div>
                                     <div class="form-group chekbox-area">
                                         <div class="edu-form-check">
                                             <input type="checkbox" id="terms-condition">
-                                            <label for="terms-condition">I agree the User Agreement and <a href="#">Terms & Condition.</a> </label>
+                                            <label for="terms-condition">Acepto los términos y condiciones. <a href="#">Términos y condiciones.</a> </label>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <button type="button" class="edu-btn btn-medium">Create Account <i class="icon-4"></i></button>
+                                        <button type="button" id="btn-register-submit" class="edu-btn btn-medium">Crear Cuenta <i class="icon-4"></i></button>
                                     </div>
                                 </form>
+                                <div id="register-success-msg" style="display:none;" class="text-center">
+                                    <h4 class="title text-success" style="color: #1ab69d;">¡Gracias por registrarte!</h4>
+                                    <p>Tu cuenta se ha creado exitosamente.</p>
+                                    <p>Redirigiendo a tu perfil...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Register Modal Logic
+                    const btnRegister = document.getElementById('btn-register-submit');
+                    if(btnRegister) {
+                        btnRegister.addEventListener('click', function() {
+                            // Loading state
+                            const originalContent = btnRegister.innerHTML;
+                            btnRegister.innerHTML = 'Procesando...';
+                            btnRegister.style.opacity = '0.7';
+                            btnRegister.disabled = true;
+
+                            setTimeout(function() {
+                                // Hide form, show success
+                                document.getElementById('register-form-modal').style.display = 'none';
+                                document.getElementById('register-success-msg').style.display = 'block';
+                                
+                                setTimeout(function() {
+                                    window.location.href = '<?php echo $baseUrl; ?>/mi-perfil';
+                                }, 2000);
+                            }, 1500);
+                        });
+                    }
+
+                    // Login Modal Logic
+                    const btnLoginModal = document.getElementById('btn-login-modal-submit');
+                    if(btnLoginModal) {
+                        btnLoginModal.addEventListener('click', function() {
+                            // Loading state
+                            const originalContent = btnLoginModal.innerHTML;
+                            btnLoginModal.innerHTML = 'Procesando...';
+                            btnLoginModal.style.opacity = '0.7';
+                            btnLoginModal.disabled = true;
+
+                            setTimeout(function() {
+                                // Hide form, show success
+                                document.getElementById('login-form-modal').style.display = 'none';
+                                document.getElementById('login-modal-success-msg').style.display = 'block';
+                                
+                                setTimeout(function() {
+                                    window.location.href = '<?php echo $baseUrl; ?>/mi-perfil';
+                                }, 2000);
+                            }, 1500);
+                        });
+                    }
+                });
+            </script>
         </header>

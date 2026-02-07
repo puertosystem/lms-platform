@@ -29,7 +29,7 @@
                 <h3 class="login-title">Iniciar sesión</h3>
                 <p class="login-subtitle">Ingrese su usuario y contraseña para iniciar sesión.</p>
                 
-                <form action="#" method="POST">
+                <form id="login-form" action="#" method="POST">
                     <div class="form-group">
                         <label for="username" class="form-label">Usuario</label>
                         <input type="text" name="username" id="username" class="form-control" placeholder="Ingresa tu DNI">
@@ -41,13 +41,19 @@
                     </div>
                     
                     <div class="form-group">
-                        <a href="<?php echo $baseUrl; ?>/mi-perfil" class="edu-btn btn-medium btn-login">INICIAR SESIÓN</a>
+                        <a href="<?php echo $baseUrl; ?>/mi-perfil" id="btn-login-submit" class="edu-btn btn-medium btn-login">INICIAR SESIÓN</a>
                     </div>
                     
                     <div class="forgot-password">
                         <a href="#">¿Se te olvidó tu contraseña?</a>
                     </div>
                 </form>
+
+                <div id="login-success-msg" style="display:none;" class="text-center mt-5">
+                    <h4 class="title text-success" style="color: #1ab69d;">¡Bienvenido!</h4>
+                    <p>Sesión iniciada correctamente.</p>
+                    <p>Redirigiendo a tu perfil...</p>
+                </div>
             </div>
             
             <!-- Decorator shape bottom left -->
@@ -60,5 +66,35 @@
         </div>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnLogin = document.getElementById('btn-login-submit');
+            if(btnLogin) {
+                btnLogin.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent immediate navigation
+                    const targetUrl = this.getAttribute('href');
+
+                    // Loading state
+                    const originalContent = btnLogin.innerHTML;
+                    btnLogin.innerHTML = 'Procesando...';
+                    btnLogin.style.opacity = '0.7';
+                    btnLogin.style.pointerEvents = 'none';
+
+                    setTimeout(function() {
+                        // Hide form, show success
+                        document.getElementById('login-form').style.display = 'none';
+                        const subtitle = document.querySelector('.login-subtitle');
+                        if(subtitle) subtitle.style.display = 'none';
+                        
+                        document.getElementById('login-success-msg').style.display = 'block';
+                        
+                        setTimeout(function() {
+                            window.location.href = targetUrl;
+                        }, 2000);
+                    }, 1500);
+                });
+            }
+        });
+    </script>
 </body>
 </html>

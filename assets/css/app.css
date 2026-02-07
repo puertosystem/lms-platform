@@ -32219,6 +32219,8 @@ body .tpd-size-medium .tpd-content {
 .edu-footer .footer-top {
     position: relative;
     padding: 100px 0 95px;
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
 .edu-footer .footer-top::before {
