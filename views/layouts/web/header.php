@@ -297,14 +297,14 @@
                             btnRegister.disabled = true;
 
                             setTimeout(function() {
-                                // Hide form, show success
-                                document.getElementById('register-form-modal').style.display = 'none';
-                                document.getElementById('register-success-msg').style.display = 'block';
-                                
-                                setTimeout(function() {
-                                    window.location.href = '<?php echo $baseUrl; ?>/mi-perfil';
-                                }, 2000);
-                            }, 1500);
+                            // Hide form, show success
+                            document.getElementById('register-form-modal').style.display = 'none';
+                            document.getElementById('register-success-msg').style.display = 'block';
+                            
+                            setTimeout(function() {
+                                window.location.href = '<?php echo $baseUrl; ?>/aula-virtual/mi-perfil';
+                            }, 2000);
+                        }, 1500);
                         });
                     }
 
@@ -319,14 +319,14 @@
                             btnLoginModal.disabled = true;
 
                             setTimeout(function() {
-                                // Hide form, show success
-                                document.getElementById('login-form-modal').style.display = 'none';
-                                document.getElementById('login-modal-success-msg').style.display = 'block';
-                                
-                                setTimeout(function() {
-                                    window.location.href = '<?php echo $baseUrl; ?>/mi-perfil';
-                                }, 2000);
-                            }, 1500);
+                            // Hide form, show success
+                            document.getElementById('login-form-modal').style.display = 'none';
+                            document.getElementById('login-modal-success-msg').style.display = 'block';
+                            
+                            setTimeout(function() {
+                                window.location.href = '<?php echo $baseUrl; ?>/aula-virtual/mi-perfil';
+                            }, 2000);
+                        }, 1500);
                         });
                     }
                 });

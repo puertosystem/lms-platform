@@ -2,6 +2,9 @@
 body.classroom-watch-page {
     background-color: #f5f5f5;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header Styles */
@@ -62,8 +65,9 @@ body.classroom-watch-page {
 /* Layout Container */
 .classroom-wrapper {
     display: flex;
-    height: 100vh;
+    flex: 1;
     padding-top: 60px; /* Header height */
+    position: relative;
 }
 
 /* Sidebar Styles */
@@ -140,8 +144,6 @@ body.classroom-watch-page {
     flex: 1;
     margin-left: 350px; /* Sidebar width */
     padding: 40px;
-    overflow-y: auto;
-    height: calc(100vh - 60px);
     transition: margin-left 0.3s ease;
 }
 
@@ -197,18 +199,15 @@ body.classroom-watch-page {
     background-color: var(--color-secondary);
 }
 
-/* Responsive */
-@media (max-width: 991px) {
-    .classroom-sidebar {
-        transform: translateX(-100%);
-    }
-    
-    .classroom-sidebar.active {
-        transform: translateX(0);
-    }
-    
-    .classroom-content {
-        margin-left: 0;
-        padding: 20px;
-    }
+/* Dropdown and Utility Styles from Header */
+.dropdown-item:hover {
+    background-color: #1e293b;
+}
+
+.hover-text-white:hover {
+    color: #fff !important;
+}
+
+.no-arrow::after {
+    display: none !important;
 }

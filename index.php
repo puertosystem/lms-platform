@@ -58,15 +58,10 @@ switch ($route) {
         $controller = new \App\Controllers\Web\CheckoutController();
         $controller->index($BASE_PATH, $BASE_URL);
         break;
-    case 'mi-perfil':
+    case 'aula-virtual/mi-perfil':
         require $BASE_PATH . '/app/Controllers/Classroom/ProfileController.php';
         $controller = new \App\Controllers\Classroom\ProfileController();
         $controller->index($BASE_PATH, $BASE_URL);
-        break;
-    case 'mis-cursos':
-        require $BASE_PATH . '/app/Controllers/Classroom/ProfileController.php';
-        $controller = new \App\Controllers\Classroom\ProfileController();
-        $controller->myCourses($BASE_PATH, $BASE_URL);
         break;
     case 'aula-virtual':
         require $BASE_PATH . '/app/Controllers/Classroom/AuthController.php';

@@ -1,38 +1,41 @@
-<?php
-// Asegurarse de que $activePage esté definido para evitar errores
-if (!isset($activePage)) {
-    $activePage = '';
-}
-?>
-<div class="faq-page-nav">
-    <h3 class="title">Mi Cuenta</h3>
-    <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item" role="presentation">
-            <a href="<?php echo $baseUrl; ?>/mi-perfil" class="nav-link <?php echo ($activePage === 'dashboard') ? 'active' : ''; ?>"><i class="icon-59"></i> Dashboard</a>
+<aside class="classroom-sidebar">
+    <div class="lesson-search">
+        <input type="text" placeholder="Buscar...">
+        <i class="icon-2" style="position: absolute; right: 30px; top: 25px; color: #999;"></i>
+    </div>
+    
+    <ul class="lesson-list dashboard-menu">
+        <li class="lesson-item <?php echo ($activePage ?? '') === 'dashboard' ? 'active' : ''; ?>">
+            <a href="<?php echo $baseUrl; ?>/aula-virtual/mi-perfil">
+                <div class="d-flex align-items-center">
+                    <i class="icon-2 lesson-icon"></i> <!-- Dashboard Icon -->
+                    <span>Escritorio</span>
+                </div>
+            </a>
         </li>
-        <li class="nav-item" role="presentation">
-            <a href="#" class="nav-link <?php echo ($activePage === 'profile') ? 'active' : ''; ?>"><i class="icon-2"></i> Mi Perfil</a>
+        <li class="lesson-item <?php echo ($activePage ?? '') === 'wishlist' ? 'active' : ''; ?>">
+            <a href="<?php echo $baseUrl; ?>/aula-virtual/lista-deseos">
+                <div class="d-flex align-items-center">
+                    <i class="icon-22 lesson-icon"></i> <!-- Wishlist Icon -->
+                    <span>Lista de deseos</span>
+                </div>
+            </a>
         </li>
-        <li class="nav-item" role="presentation">
-            <a href="<?php echo $baseUrl; ?>/mis-cursos" class="nav-link <?php echo ($activePage === 'my-courses') ? 'active' : ''; ?>"><i class="icon-25"></i> Mis Cursos</a>
+        <li class="lesson-item <?php echo ($activePage ?? '') === 'payments' ? 'active' : ''; ?>">
+            <a href="<?php echo $baseUrl; ?>/aula-virtual/pagos">
+                <div class="d-flex align-items-center">
+                    <i class="ri-secure-payment-line lesson-icon" style="font-size: 18px;"></i> <!-- Payments Icon -->
+                    <span>Pagos</span>
+                </div>
+            </a>
         </li>
-        <li class="nav-item" role="presentation">
-            <a href="#" class="nav-link <?php echo ($activePage === 'wishlist') ? 'active' : ''; ?>"><i class="icon-22"></i> Wishlist</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a href="#" class="nav-link <?php echo ($activePage === 'reviews') ? 'active' : ''; ?>"><i class="icon-28"></i> Reseñas</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a href="#" class="nav-link <?php echo ($activePage === 'quizzes') ? 'active' : ''; ?>"><i class="icon-44"></i> Cuestionarios</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a href="#" class="nav-link <?php echo ($activePage === 'orders') ? 'active' : ''; ?>"><i class="icon-43"></i> Historial de Pedidos</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a href="#" class="nav-link <?php echo ($activePage === 'settings') ? 'active' : ''; ?>"><i class="icon-8"></i> Ajustes</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a href="#" class="nav-link <?php echo ($activePage === 'logout') ? 'active' : ''; ?>"><i class="icon-4"></i> Cerrar Sesión</a>
+        <li class="lesson-item <?php echo ($activePage ?? '') === 'settings' ? 'active' : ''; ?>">
+            <a href="<?php echo $baseUrl; ?>/aula-virtual/ajustes">
+                <div class="d-flex align-items-center">
+                    <i class="icon-83 lesson-icon"></i> <!-- Settings Icon -->
+                    <span>Ajustes</span>
+                </div>
+            </a>
         </li>
     </ul>
-</div>
+</aside>

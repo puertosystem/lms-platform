@@ -41,7 +41,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <a href="<?php echo $baseUrl; ?>/mi-perfil" id="btn-login-submit" class="edu-btn btn-medium btn-login">INICIAR SESIÓN</a>
+                        <a href="<?php echo $baseUrl; ?>/aula-virtual/mi-perfil" id="btn-login-submit" class="edu-btn btn-medium btn-login">INICIAR SESIÓN</a>
                     </div>
                     
                     <div class="forgot-password">
