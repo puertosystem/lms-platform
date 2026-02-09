@@ -14,5 +14,6 @@
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/vendor/remixicon.css">
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/app.css">
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/classroom-watch.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/classroom-dashboard.css">
 </head>
-<body class="classroom-watch-page">
+<body class="classroom-dashboard-page">

@@ -10,13 +10,19 @@
     </div>
 
     <div class="d-flex align-items-center">
-        <div class="progress-container d-none d-md-flex">
+        <div class="progress-container d-none d-md-flex me-3">
             <span class="progress-text">0 de 77 elementos</span>
             <div class="progress-bar-wrapper">
                 <div class="progress-fill" style="width: 15%;"></div>
             </div>
         </div>
-        <a href="<?php echo $baseUrl; ?>/mis-cursos" class="btn-close-classroom">
+        
+        <!-- Toggle Comments -->
+        <button class="btn btn-link text-white me-3" id="toggle-comments" title="Mostrar/Ocultar Comentarios">
+            <i class="ri-chat-3-line" style="font-size: 24px;"></i>
+        </button>
+
+        <a href="<?php echo $baseUrl; ?>/aula-virtual/mi-perfil" class="btn-close-classroom">
             <i class="icon-73"></i>
         </a>
     </div>

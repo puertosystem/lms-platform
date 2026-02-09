@@ -1,0 +1,144 @@
+
+/* Comments Sidebar Styles */
+.comment-input-wrapper input {
+    padding-right: 40px;
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.comment-input-wrapper input:focus {
+    background-color: #fff;
+    border-color: var(--color-primary);
+    box-shadow: none;
+}
+
+.comment-input-wrapper .btn-send {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.comment-input-wrapper .btn-send:hover {
+    color: var(--color-primary);
+}
+
+.comment-filters .btn-filter {
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #eee;
+    background-color: #fff;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.comment-filters .btn-filter:hover,
+.comment-filters .btn-filter.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.comment-item {
+    font-size: 14px;
+}
+
+.comment-author-col {
+    width: 40px;
+    flex-shrink: 0;
+}
+
+.comment-author-col .avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.like-action {
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.like-action:hover,
+.like-action.active {
+    color: #ff4757;
+}
+
+.like-action i {
+    font-size: 18px;
+    display: block;
+    margin-bottom: -2px;
+}
+
+.author-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.author-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.comment-text {
+    color: #444;
+    line-height: 1.5;
+}
+
+.comment-actions .btn-action {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 13px;
+    color: #999;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.comment-actions .btn-action:hover {
+    color: var(--color-primary);
+}
+
+.replies-wrapper {
+    position: relative;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.replies-wrapper::before {
+    content: '';
+    position: absolute;
+    left: -26px; /* Adjust based on parent padding/gap */
+    top: 0;
+    bottom: 20px;
+    width: 2px;
+    background-color: #eee;
+}
+
+/* Adjust nested comments */
+.reply-item {
+    margin-bottom: 15px;
+}
+
+.load-more-replies {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}

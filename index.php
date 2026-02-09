@@ -63,6 +63,26 @@ switch ($route) {
         $controller = new \App\Controllers\Classroom\ProfileController();
         $controller->index($BASE_PATH, $BASE_URL);
         break;
+    case 'aula-virtual/mis-certificados':
+        require_once $BASE_PATH . '/app/Controllers/Classroom/ProfileController.php';
+        $controller = new \App\Controllers\Classroom\ProfileController();
+        $controller->certificates($BASE_PATH, $BASE_URL);
+        break;
+    case 'aula-virtual/lista-deseos':
+        require_once $BASE_PATH . '/app/Controllers/Classroom/ProfileController.php';
+        $controller = new \App\Controllers\Classroom\ProfileController();
+        $controller->wishlist($BASE_PATH, $BASE_URL);
+        break;
+    case 'aula-virtual/pagos':
+        require_once $BASE_PATH . '/app/Controllers/Classroom/ProfileController.php';
+        $controller = new \App\Controllers\Classroom\ProfileController();
+        $controller->payments($BASE_PATH, $BASE_URL);
+        break;
+    case 'aula-virtual/ajustes':
+        require $BASE_PATH . '/app/Controllers/Classroom/SettingsController.php';
+        $controller = new \App\Controllers\Classroom\SettingsController();
+        $controller->index($BASE_PATH, $BASE_URL);
+        break;
     case 'aula-virtual':
         require $BASE_PATH . '/app/Controllers/Classroom/AuthController.php';
         $controller = new \App\Controllers\Classroom\AuthController();

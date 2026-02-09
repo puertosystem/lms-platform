@@ -1,0 +1,118 @@
+/* Dashboard Settings Page Styles */
+
+/* Profile Card */
+.profile-avatar-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-edit-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.profile-edit-btn:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+/* Social Buttons */
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-social:hover {
+    color: #fff !important;
+    border-color: transparent !important;
+}
+
+.btn-twitter {
+    color: #1DA1F2;
+    border-color: #e1e8ed;
+}
+
+.btn-twitter:hover {
+    background-color: #1DA1F2;
+    color: #fff;
+}
+
+.btn-facebook {
+    color: #1877F2;
+    border-color: #e1e8ed;
+}
+
+.btn-facebook:hover {
+    background-color: #1877F2;
+    color: #fff;
+}
+
+.btn-social i {
+    font-size: 1.2em;
+}
+
+/* Forms */
+.form-label.fw-bold {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.country-select-btn {
+    height: 100%;
+    background-color: #fff !important;
+    border-color: #ced4da !important;
+}
+
+.country-select-btn:hover {
+    background-color: #f8f9fa !important;
+}
+
+/* Action Buttons */
+.btn-save-changes {
+    background-color: #00bf8c;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-save-changes:hover {
+    background-color: #009e74;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 191, 140, 0.3);
+}
+
+/* Cards */
+.settings-card {
+    border: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.settings-card:hover {
+    transform: translateY(-5px);
+}

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/vendor/remixicon.css">
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/app.css">
     <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/classroom-watch.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/comments.css">
 </head>
 <body class="classroom-watch-page">
 
@@ -30,6 +31,9 @@
                 <?php include __DIR__ . '/partials/player.php'; ?>
             </div>
         </main>
+
+        <!-- Right Sidebar (Comments) -->
+        <?php include __DIR__ . '/partials/sidebar-comments.php'; ?>
     </div>
 
     <!-- JS -->
@@ -46,6 +50,12 @@
             // Mobile toggle
             $('.mobile-toggle').on('click', function() {
                 $('.classroom-sidebar').toggleClass('active');
+            });
+
+            // Toggle Comments Sidebar
+            $('#toggle-comments').on('click', function() {
+                $('.classroom-sidebar-right').toggleClass('collapsed');
+                $('.classroom-content').toggleClass('expanded-right');
             });
         });
     </script>

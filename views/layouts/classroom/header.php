@@ -81,7 +81,7 @@
         <div class="edu-header-profile dropdown">
             <a href="#" class="d-flex align-items-center gap-3 text-white text-decoration-none dropdown-toggle" id="userProfileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 
-                <img src="<?php echo $baseUrl; ?>/assets/images/team/team-02.png" alt="User" style="width: 35px; height: 35px; border-radius: 50%; object-fit: cover;">
+                <img src="<?php echo $baseUrl; ?>/assets/images/team/team-01.jpg" alt="User" style="width: 35px; height: 35px; border-radius: 50%; object-fit: cover;">
                 <div class="d-flex align-items-center">
                     <span class="fw-bold me-1">27</span>
                     <span class="text-muted" style="font-size: 0.9em;">pts</span>
@@ -104,12 +104,10 @@
                 <li><a class="dropdown-item text-white py-2 rounded" href="#" style="font-size: 14px;">Contáctanos</a></li>
                 
                 <!-- Logout -->
-                <li><a class="dropdown-item py-2 rounded mt-2 fw-bold" href="<?php echo $baseUrl; ?>/logout" style="color: #ef4444; font-size: 14px;">Cerrar sesión</a></li>
+                <li><a class="dropdown-item py-2 rounded mt-2 fw-bold" href="<?php echo $baseUrl; ?>/" style="color: #ef4444; font-size: 14px;">Cerrar sesión</a></li>
             </ul>
         </div>
         
-        <a href="<?php echo $baseUrl; ?>/" class="btn-close-classroom ms-4" title="Ir al sitio web">
-            <i class="icon-73"></i>
-        </a>
+
     </div>
 </header>

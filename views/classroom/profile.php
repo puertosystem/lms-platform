@@ -14,7 +14,7 @@
                 <!-- Dashboard Content Injected Here -->
                  <div class="edu-user-dashboard-header" style="display: flex; align-items: center; gap: 20px; padding: 30px; background: #fff; border-radius: 10px; margin-bottom: 40px; border: 1px solid #eee;">
                     <div class="thumbnail">
-                        <img src="<?php echo $baseUrl; ?>/assets/images/team/team-02.png" alt="User Image" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+                        <img src="<?php echo $baseUrl; ?>/assets/images/team/team-01.jpg                                                                                                                                                                                                                                                                                                                                    " alt="User Image" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
                     </div>
                     <div class="content">
                         <h4 class="title" style="margin-bottom: 5px; color: #333;">Hola, Juan Perez</h4>
@@ -68,7 +68,7 @@
                             <div class="edu-course course-style-1 hover-button-bg-white" style="border: 1px solid #eee; border-radius: 8px;">
                                 <div class="inner">
                                     <div class="thumbnail">
-                                        <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                                        <a href="<?php echo $baseUrl; ?>/aula-virtual/curso/ver">
                                             <img src="<?php echo $baseUrl; ?>/assets/images/course/course-07.jpg" alt="Course Meta">
                                         </a>
                                         <div class="time-top">
@@ -78,7 +78,7 @@
                                     <div class="content">
                                         <span class="course-level">Principiante</span>
                                         <h6 class="title">
-                                            <a href="<?php echo $baseUrl; ?>/detalle-curso">Curso Completo de Camtasia</a>
+                                            <a href="<?php echo $baseUrl; ?>/aula-virtual/curso/ver">Curso Completo de Camtasia</a>
                                         </h6>
                                         <div class="course-rating">
                                             <div class="rating">
@@ -105,7 +105,7 @@
                             <div class="edu-course course-style-1 hover-button-bg-white" style="border: 1px solid #eee; border-radius: 8px;">
                                 <div class="inner">
                                     <div class="thumbnail">
-                                        <a href="<?php echo $baseUrl; ?>/detalle-curso">
+                                        <a href="<?php echo $baseUrl; ?>/aula-virtual/curso/ver">
                                             <img src="<?php echo $baseUrl; ?>/assets/images/course/course-04.jpg" alt="Course Meta">
                                         </a>
                                         <div class="time-top">
@@ -115,7 +115,7 @@
                                     <div class="content">
                                         <span class="course-level">Avanzado</span>
                                         <h6 class="title">
-                                            <a href="<?php echo $baseUrl; ?>/detalle-curso">Marketing Digital Avanzado</a>
+                                            <a href="<?php echo $baseUrl; ?>/aula-virtual/curso/ver">Marketing Digital Avanzado</a>
                                         </h6>
                                         <div class="course-rating">
                                             <div class="rating">
