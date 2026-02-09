@@ -1,48 +1,64 @@
-# lms-platform
+# LMS - Tu Guía Digital
 
-Sistema LMS desarrollado en PHP para cursos en línea, enfocado en la plataforma Tu Guía Digital.
+Plataforma de Gestión de Aprendizaje (LMS) desarrollada a medida en PHP, diseñada para la venta y gestión de cursos en línea de "Tu Guía Digital".
 
-## Estructura del Proyecto
+## 📋 Descripción del Proyecto
 
-El proyecto sigue una arquitectura **MVC (Modelo-Vista-Controlador)** modular, organizada para separar la lógica del sitio web público, el aula virtual y la administración.
+Este proyecto es una aplicación web completa que gestiona tanto la parte pública (venta de cursos, blog, contacto) como el área privada de estudiantes (Aula Virtual) y la administración. Está construido siguiendo el patrón de arquitectura **MVC (Modelo-Vista-Controlador)** sin depender de frameworks pesados, garantizando un rendimiento óptimo y facilidad de personalización.
 
-### 📂 Directorios Principales
+## � Características Principales
 
-- **`app/`**: Contiene toda la lógica de negocio y controladores.
-  - **`Controllers/`**: Controladores organizados por módulo (`Web`, `Classroom`, `Admin`).
-  - **`Models/`**: Modelos de datos para interactuar con la base de datos.
-  - **`Services/`**: Capa de servicios para lógica de negocio compleja.
-  - **`DTOs/`**: Objetos de Transferencia de Datos.
-  - **`Validators/`**: Lógica de validación de datos.
-  - **`Helpers/`**: Funciones de utilidad y auxiliares.
-  - **`Core/`**: Componentes del núcleo del framework (si aplica).
+### 🌐 Web Pública
+- **Catálogo de Cursos:** Listado de cursos con filtros y detalles.
+- **Carrito de Compras:** Flujo de compra completo (Carrito -> Checkout).
+- **Blog:** Sección de noticias y artículos.
+- **Páginas Informativas:** Nosotros, Contacto, Instructores, FAQ.
 
-- **`views/`**: Vistas y plantillas HTML, separadas por contexto.
-  - **`web/`**: Vistas públicas (Home, Blog, Cursos, Contacto, Tienda).
-  - **`classroom/`**: Vistas del área de estudiantes (Mis Cursos, Perfil, Login).
-  - **`admin/`**: Vistas del panel de administración.
-  - **`layouts/`**: Elementos compartidos (Headers, Footers, Sidebars) para cada módulo.
+### 🎓 Aula Virtual (Área del Estudiante)
+- **Dashboard Personal:** Resumen de progreso, racha semanal y estadísticas.
+- **Reproductor de Clases:** Interfaz inmersiva para ver lecciones de video (YouTube/Vimeo) con navegación entre módulos.
+- **Sistema de Comentarios:** Hilo de preguntas y respuestas en tiempo real (estilo chat) en cada clase.
+- **Gestión de Perfil:** Edición de datos personales, redes sociales y preferencias.
+- **Certificados:** Generación y descarga de certificados al completar cursos.
+- **Lista de Deseos:** Guardado de cursos de interés.
+- **Historial de Pagos:** Registro de transacciones y facturas.
 
-- **`assets/`**: Recursos estáticos públicos.
-  - **`css/`**: Hojas de estilo (incluye `app.css`).
-  - **`js/`**: Scripts JavaScript.
-  - **`images/`**: Imágenes del sitio.
-  - **`fonts/`**: Fuentes e iconos (IcoMoon, RemixIcon).
+## 🛠️ Estructura Técnica
 
-- **`template/`**: Plantillas HTML originales de referencia (EduBlink).
+El proyecto está organizado modularmente para facilitar el mantenimiento:
 
-- **`index.php`**: Punto de entrada único de la aplicación. Maneja el enrutamiento dinámico basado en la variable `route`.
+### 📂 Directorios
+- **`app/`**: Lógica del negocio.
+  - **`Controllers/`**: Controladores divididos en `Web` (Público), `Classroom` (Alumno) y `Admin` (Gestión).
+  - **`Models/`**: Capa de acceso a datos.
+- **`views/`**: Plantillas HTML/PHP.
+  - **`web/`**: Vistas de la página comercial.
+  - **`classroom/`**: Vistas del panel de estudiantes (Diseño Dashboard).
+  - **`layouts/`**: Componentes reutilizables (Headers, Footers, Sidebars).
+- **`assets/`**: Recursos estáticos (CSS, JS, Imágenes, Fuentes).
+- **`index.php`**: Enrutador principal (Router) que despacha las peticiones.
 
-## Instalación
+### 💻 Tecnologías
+- **Backend:** PHP 7.4 / 8.x (Nativo, POO).
+- **Frontend:** HTML5, CSS3 (Modular), JavaScript (Vanilla + jQuery).
+- **Framework CSS:** Bootstrap 5 (Personalizado).
+- **Base de Datos:** MySQL.
+- **Servidor:** Apache (XAMPP).
 
-1. Clona el repositorio.
-2. Configura el servidor web (XAMPP/Apache).
-3. Importa la base de datos (pendiente).
-4. Configura las credenciales de base de datos en `app/Models/connection.php` (o similar).
+## ⚙️ Instalación y Configuración
 
-## Tecnologías
+1. **Requisitos:** Servidor web con PHP (ej. XAMPP, Laragon) y MySQL.
+2. **Despliegue:**
+   - Clonar el repositorio en `htdocs`.
+   - Asegurarse de que la carpeta raíz sea `lms`.
+3. **Base de Datos:**
+   - Importar el script SQL (si está disponible) en phpMyAdmin.
+   - Configurar credenciales en `app/Models/connection.php`.
+4. **Ejecución:**
+   - Acceder a `http://localhost/lms` para la web pública.
+   - Acceder a `http://localhost/lms/aula-virtual` para el login de estudiantes.
 
-- **Lenguaje**: PHP 7.4+ / 8.x
-- **Base de Datos**: MySQL
-- **Frontend**: HTML5, CSS3, JavaScript (Plantilla EduBlink)
-- **Servidor**: Apache (XAMPP recomendado para local)
+## 📝 Estado Actual
+- **UI/UX:** Diseño responsive implementado en Aula Virtual y Web Pública.
+- **Navegación:** Rutas amigables configuradas en `index.php`.
+- **Internacionalización:** Comentarios de código en Español para facilitar el desarrollo.

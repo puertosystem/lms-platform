@@ -10,7 +10,7 @@
     </div>
 
     <div class="d-flex align-items-center">
-        <!-- Weekly Streak Dropdown -->
+        <!-- Desplegable de Racha Semanal -->
         <div class="dropdown me-3">
             <a href="#" class="d-flex align-items-center gap-2 text-decoration-none dropdown-toggle no-arrow" id="streakDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="ri-rocket-2-fill text-success fs-5"></i>
@@ -18,7 +18,7 @@
             </a>
             
             <div class="dropdown-menu p-4 border-0" aria-labelledby="streakDropdown" style="width: 340px; background: #0f172a; border: 1px solid #1e293b; border-radius: 16px; margin-top: 15px; box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5);">
-                <!-- Content -->
+                <!-- Contenido -->
                 <div class="d-flex gap-3 mb-4">
                     <div class="streak-icon-wrapper">
                         <i class="ri-rocket-2-fill text-success" style="font-size: 2.5rem;"></i>
@@ -31,39 +31,39 @@
                     </div>
                 </div>
 
-                <!-- Stepper -->
+                <!-- Pasos -->
                 <div class="position-relative px-2">
-                    <!-- Connecting Line -->
+                    <!-- Línea de Conexión -->
                     <div class="position-absolute w-100" style="height: 2px; background: #334155; top: 18px; left: 0; z-index: 0;"></div>
                     
                     <div class="d-flex justify-content-between position-relative" style="z-index: 1;">
-                        <!-- Step 1 (Active) -->
+                        <!-- Paso 1 (Activo) -->
                         <div class="text-center">
                             <div class="d-flex align-items-center justify-content-center rounded-circle bg-success shadow-sm mx-auto mb-2" style="width: 36px; height: 36px; border: 2px solid #0f172a;">
                                 <i class="ri-check-line text-white fw-bold"></i>
                             </div>
                         </div>
                         
-                        <!-- Step 2 -->
+                        <!-- Paso 2 -->
                         <div class="text-center">
                             <div class="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-2" style="width: 36px; height: 36px; background: #0f172a; border: 2px solid #334155;">
                             </div>
                         </div>
 
-                        <!-- Step 3 -->
+                        <!-- Paso 3 -->
                         <div class="text-center">
                             <div class="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-2" style="width: 36px; height: 36px; background: #0f172a; border: 2px solid #334155;">
                             </div>
                         </div>
 
-                        <!-- Step 4 -->
+                        <!-- Paso 4 -->
                         <div class="text-center">
                             <div class="d-flex align-items-center justify-content-center rounded-circle mx-auto mb-2" style="width: 36px; height: 36px; background: #0f172a; border: 2px solid #334155;">
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Labels -->
+                    <!-- Etiquetas -->
                     <div class="d-flex align-items-center justify-content-between mt-1 px-1">
                         <span class="text-white fw-bold me-auto" style="font-size: 14px;">Semana:</span>
                         <div class="d-flex justify-content-between" style="width: 78%;">
@@ -77,7 +77,7 @@
             </div>
         </div>
 
-        <!-- User Profile Dropdown -->
+        <!-- Desplegable de Perfil de Usuario -->
         <div class="edu-header-profile dropdown">
             <a href="#" class="d-flex align-items-center gap-3 text-white text-decoration-none dropdown-toggle" id="userProfileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
 
@@ -90,7 +90,7 @@
             </a>
             
             <ul class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="userProfileDropdown" style="background: #0f172a; border: 1px solid #1e293b; min-width: 240px; border-radius: 12px; margin-top: 15px; box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5);">
-                <!-- Header -->
+                <!-- Encabezado -->
                 <li class="mb-2">
                     <span class="d-block text-white fw-bold fs-6">Hola, Juan Perez</span>
                     <a href="<?php echo $baseUrl; ?>/aula-virtual/mi-perfil" class="d-block text-muted text-decoration-none mt-1 hover-text-white" style="font-size: 14px; transition: 0.3s;">Ver mi perfil</a>
@@ -98,12 +98,12 @@
                 
                 <li><hr class="dropdown-divider my-2" style="border-color: #334155;"></li>
                 
-                <!-- Menu Items -->
+                <!-- Elementos del Menú -->
                 <li><a class="dropdown-item text-white py-2 rounded" href="#" style="font-size: 14px;">Obtén 1 mes gratis</a></li>
                 <li><a class="dropdown-item text-white py-2 rounded" href="#" style="font-size: 14px;">Mi suscripción</a></li>
                 <li><a class="dropdown-item text-white py-2 rounded" href="#" style="font-size: 14px;">Contáctanos</a></li>
                 
-                <!-- Logout -->
+                <!-- Cerrar Sesión -->
                 <li><a class="dropdown-item py-2 rounded mt-2 fw-bold" href="<?php echo $baseUrl; ?>/" style="color: #ef4444; font-size: 14px;">Cerrar sesión</a></li>
             </ul>
         </div>

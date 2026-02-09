@@ -1,4 +1,9 @@
 <?php
+/**
+ * Punto de entrada principal y enrutador de la aplicación.
+ * Maneja todas las solicitudes entrantes y despacha al controlador correspondiente.
+ */
+
 $BASE_PATH = __DIR__;
 // Calcular URL base dinámicamente
 $scriptName = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME']));

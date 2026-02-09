@@ -3,7 +3,7 @@
         <h2 class="lesson-title mb-4">Bienvenida al curso</h2>
         
         <div class="video-container">
-            <!-- Example YouTube Embed -->
+            <!-- Ejemplo de video de YouTube -->
             <iframe src="https://www.youtube.com/embed/PICj5tr9hcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 

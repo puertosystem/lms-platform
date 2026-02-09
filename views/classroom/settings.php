@@ -1,18 +1,18 @@
 <?php include $basePath . '/views/layouts/classroom/head.php'; ?>
 
-    <!-- Header -->
+    <!-- Encabezado -->
     <?php include $basePath . '/views/layouts/classroom/header.php'; ?>
 
     <div class="classroom-wrapper classroom-settings-page">
-        <!-- Sidebar -->
+        <!-- Barra Lateral -->
         <?php include $basePath . '/views/layouts/classroom/sidebar.php'; ?>
 
-        <!-- Main Content -->
+        <!-- Contenido Principal -->
         <main class="classroom-content" id="main-content">
             <div class="container-fluid">
                 
                 <div class="row g-5">
-                    <!-- Left Column: Profile Image & Socials -->
+                    <!-- Columna Izquierda: Imagen de Perfil y Redes Sociales -->
                     <div class="col-lg-4 col-xl-3">
                         <div class="card border-0 shadow-sm mb-4 settings-card">
                             <div class="card-body text-center p-4">
@@ -41,13 +41,13 @@
                         </div>
                     </div>
 
-                    <!-- Right Column: Settings Form -->
+                    <!-- Columna Derecha: Formulario de Ajustes -->
                     <div class="col-lg-8 col-xl-9">
                         <div class="card border-0 shadow-sm settings-card">
                             <div class="card-body p-4">
                                 <h4 class="fw-bold mb-4">Tus Datos</h4>
                                 <form>
-                                    <!-- Name & Lastname -->
+                                    <!-- Nombre y Apellidos -->
                                     <div class="row mb-3">
                                         <div class="col-md-6">
                                             <label class="form-label small text-muted fw-bold">Nombres</label>
@@ -59,7 +59,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- User & Email -->
+                                    <!-- Usuario y Email -->
                                     <div class="row mb-3">
                                         <div class="col-md-6">
                                             <label class="form-label small text-muted fw-bold">Usuario</label>
@@ -71,13 +71,13 @@
                                         </div>
                                     </div>
 
-                                    <!-- Website -->
+                                    <!-- Sitio Web -->
                                     <div class="mb-3">
                                         <label class="form-label small text-muted fw-bold">Sitio web personal</label>
                                         <input type="url" class="form-control">
                                     </div>
 
-                                    <!-- Bio -->
+                                    <!-- Biografía -->
                                     <div class="mb-3">
                                         <label class="form-label small text-muted fw-bold">Biografía</label>
                                         <textarea class="form-control" rows="4"></textarea>
@@ -89,7 +89,7 @@
                                         <input type="url" class="form-control">
                                     </div>
 
-                                    <!-- Gender, Birthday & Mobile -->
+                                    <!-- Género, Cumpleaños y Móvil -->
                                     <div class="row mb-3">
                                         <div class="col-md-4">
                                             <label class="form-label small text-muted fw-bold">Género</label>
@@ -126,7 +126,7 @@
 
                                     <h5 class="fw-bold mb-4">Educación e intereses</h5>
                                     
-                                    <!-- Interests -->
+                                    <!-- Intereses -->
                                     <div class="mb-4">
                                         <label class="form-label small text-muted fw-bold mb-3">Temas de interés</label>
                                         <div class="row g-3">
@@ -169,7 +169,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Education Level -->
+                                    <!-- Nivel Educativo -->
                                     <div class="mb-4">
                                         <select class="form-select">
                                             <option selected>Nivel educativo</option>
@@ -179,7 +179,7 @@
                                         </select>
                                     </div>
 
-                                    <!-- Toggles -->
+                                    <!-- Interruptores -->
                                     <div class="mb-3 d-flex justify-content-between align-items-center">
                                         <label class="form-check-label" for="hasExperience">Con la experiencia</label>
                                         <div class="form-check form-switch">
@@ -220,7 +220,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Buttons -->
+                                    <!-- Botones -->
                                     <div class="d-flex gap-3 mb-4">
                                         <button type="submit" class="btn btn-save-changes px-4 py-2 fw-bold">Guardar cambios</button>
                                         <a href="<?php echo $baseUrl; ?>/aula-virtual/mi-perfil" class="btn btn-outline-secondary px-4 py-2 fw-bold bg-white text-dark border">Volver al perfil</a>

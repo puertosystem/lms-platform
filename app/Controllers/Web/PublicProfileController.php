@@ -3,26 +3,26 @@ namespace App\Controllers\Web;
 
 class PublicProfileController {
     public function index($BASE_PATH, $BASE_URL, $username) {
-        // Here we would typically fetch the user data from the database using $username
-        // For now, we'll use mock data based on the reference image
+        // Aquí normalmente obtendríamos los datos del usuario de la base de datos usando $username
+        // Por ahora, usaremos datos simulados basados en la imagen de referencia
         
         $user = [
             'name' => 'Norberto Ramirez',
             'role' => 'Instructor',
             'course_count' => 3,
             'rating' => 0,
-            'avatar' => $BASE_URL . '/assets/images/author/author-01.jpg', // Placeholder
+            'avatar' => $BASE_URL . '/assets/images/author/author-01.jpg', // Marcador de posición
             'joined' => 'marzo 2023',
             'social' => [
                 'instagram' => '#'
             ]
         ];
 
-        // Mock courses data
+        // Datos de cursos simulados
         $courses = [
             [
                 'title' => 'Chat GPT: Domina el uso de chatGPT',
-                'image' => $BASE_URL . '/assets/images/course/course-01.jpg', // Placeholder
+                'image' => $BASE_URL . '/assets/images/course/course-01.jpg', // Marcador de posición
                 'category' => 'IA',
                 'lessons' => 18,
                 'duration' => '4:28:19',
@@ -32,17 +32,17 @@ class PublicProfileController {
             ],
             [
                 'title' => 'Meta ADS para emprendedores',
-                'image' => $BASE_URL . '/assets/images/course/course-02.jpg', // Placeholder
+                'image' => $BASE_URL . '/assets/images/course/course-02.jpg', // Marcador de posición
                 'category' => 'Marketing',
                 'lessons' => 4,
                 'duration' => '2 Horas',
                 'rating' => 0.0,
-                'price' => null, // Free or specific price
+                'price' => null, // Gratis o precio específico
                 'old_price' => null
             ],
             [
                 'title' => 'Marketing para emprender',
-                'image' => $BASE_URL . '/assets/images/course/course-03.jpg', // Placeholder
+                'image' => $BASE_URL . '/assets/images/course/course-03.jpg', // Marcador de posición
                 'category' => 'Marketing',
                 'lessons' => 26,
                 'duration' => null,
@@ -52,11 +52,11 @@ class PublicProfileController {
             ]
         ];
 
-        // View variables
+        // Variables de la vista
         $pageTitle = $user['name'] . ' | Perfil Público';
-        $baseUrl = $BASE_URL; // Fix variable name for header/footer
+        $baseUrl = $BASE_URL; // Arreglar nombre de variable para encabezado/pie de página
         
-        // Load view
+        // Cargar vista
         include $BASE_PATH . '/views/layouts/web/header.php';
         require $BASE_PATH . '/views/web/user/public.php';
         include $BASE_PATH . '/views/layouts/web/footer.php';

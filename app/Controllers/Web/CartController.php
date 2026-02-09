@@ -2,7 +2,13 @@
 
 namespace App\Controllers\Web;
 
+/**
+ * Controlador del Carrito de Compras
+ */
 class CartController {
+    /**
+     * Muestra la página del carrito
+     */
     public function index($basePath, $baseUrl) {
         // Incluir el encabezado
         require $basePath . '/views/layouts/web/header.php';

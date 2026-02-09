@@ -40,19 +40,19 @@
     <script src="<?php echo $baseUrl; ?>/assets/js/vendor/jquery.min.js"></script>
     <script src="<?php echo $baseUrl; ?>/assets/js/vendor/bootstrap.min.js"></script>
     <script>
-        // Toggle Sidebar
+        // Alternar Barra Lateral
         $(document).ready(function() {
             $('#toggle-sidebar').on('click', function() {
                 $('.classroom-sidebar').toggleClass('collapsed');
                 $('.classroom-content').toggleClass('expanded');
             });
 
-            // Mobile toggle
+            // Alternar en móvil
             $('.mobile-toggle').on('click', function() {
                 $('.classroom-sidebar').toggleClass('active');
             });
 
-            // Toggle Comments Sidebar
+            // Alternar Barra Lateral de Comentarios
             $('#toggle-comments').on('click', function() {
                 $('.classroom-sidebar-right').toggleClass('collapsed');
                 $('.classroom-content').toggleClass('expanded-right');
