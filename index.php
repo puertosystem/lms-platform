@@ -83,10 +83,53 @@ switch ($route) {
         $controller = new \App\Controllers\Classroom\ProfileController();
         $controller->payments($BASE_PATH, $BASE_URL);
         break;
+    case 'aula-virtual/mis-puntos':
+        require_once $BASE_PATH . '/app/Controllers/Classroom/ProfileController.php';
+        $controller = new \App\Controllers\Classroom\ProfileController();
+        $controller->points($BASE_PATH, $BASE_URL);
+        break;
+    case 'aula-virtual/como-conseguir-puntos':
+        require_once $BASE_PATH . '/app/Controllers/Classroom/ProfileController.php';
+        $controller = new \App\Controllers\Classroom\ProfileController();
+        $controller->earnPoints($BASE_PATH, $BASE_URL);
+        break;
     case 'aula-virtual/ajustes':
         require $BASE_PATH . '/app/Controllers/Classroom/SettingsController.php';
         $controller = new \App\Controllers\Classroom\SettingsController();
         $controller->index($BASE_PATH, $BASE_URL);
+        break;
+
+    // --- RUTAS DEL ÁREA ADMINISTRATIVA ---
+    case 'admin':
+    case 'admin/dashboard':
+        require $BASE_PATH . '/app/Controllers/Admin/DashboardController.php';
+        $controller = new \App\Controllers\Admin\DashboardController();
+        $controller->index($BASE_PATH, $BASE_URL);
+        break;
+    case 'admin/usuarios':
+        require $BASE_PATH . '/app/Controllers/Admin/UsersController.php';
+        $controller = new \App\Controllers\Admin\UsersController();
+        $controller->index($BASE_PATH, $BASE_URL);
+        break;
+    case 'admin/usuarios/crear':
+        require $BASE_PATH . '/app/Controllers/Admin/UsersController.php';
+        $controller = new \App\Controllers\Admin\UsersController();
+        $controller->create($BASE_PATH, $BASE_URL);
+        break;
+    case 'admin/cursos/crear':
+        require $BASE_PATH . '/app/Controllers/Admin/CoursesController.php';
+        $controller = new \App\Controllers\Admin\CoursesController();
+        $controller->create($BASE_PATH, $BASE_URL);
+        break;
+    case 'admin/cursos/estructura':
+        require $BASE_PATH . '/app/Controllers/Admin/CoursesController.php';
+        $controller = new \App\Controllers\Admin\CoursesController();
+        $controller->structure($BASE_PATH, $BASE_URL);
+        break;
+    case 'admin/cursos/material':
+        require $BASE_PATH . '/app/Controllers/Admin/CoursesController.php';
+        $controller = new \App\Controllers\Admin\CoursesController();
+        $controller->material($BASE_PATH, $BASE_URL);
         break;
     case 'aula-virtual':
         require $BASE_PATH . '/app/Controllers/Classroom/AuthController.php';
@@ -148,6 +191,26 @@ switch ($route) {
         $baseUrl = $BASE_URL;
         include $BASE_PATH . '/views/classroom/watch/index.php';
         break;
+    
+    // Rutas de Administración
+    case 'admin':
+        require $BASE_PATH . '/app/Controllers/Admin/DashboardController.php';
+        $controller = new \App\Controllers\Admin\DashboardController();
+        $controller->index($BASE_PATH, $BASE_URL);
+        break;
+
+    case 'admin/usuarios':
+        require $BASE_PATH . '/app/Controllers/Admin/UsersController.php';
+        $controller = new \App\Controllers\Admin\UsersController();
+        $controller->index($BASE_PATH, $BASE_URL);
+        break;
+
+    case 'admin/usuarios/crear':
+        require $BASE_PATH . '/app/Controllers/Admin/UsersController.php';
+        $controller = new \App\Controllers\Admin\UsersController();
+        $controller->create($BASE_PATH, $BASE_URL);
+        break;
+
     default:
         // Verificar rutas dinámicas
         

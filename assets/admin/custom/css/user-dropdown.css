@@ -1,0 +1,40 @@
+/* Custom User Dropdown Styles */
+.user-panel.dropdown {
+    position: relative;
+}
+
+.user-panel .dropdown-toggle {
+    cursor: pointer;
+    width: 100%;
+    color: inherit !important; /* Force inherit to override link colors */
+}
+
+.user-panel .dropdown-toggle:hover {
+    color: #fff !important;
+}
+
+.user-panel .dropdown-menu {
+    min-width: 100%;
+    margin-top: 0.5rem;
+}
+
+/* Dark mode dropdown menu for Bootstrap 4 */
+.dropdown-menu-dark {
+    color: #dee2e6;
+    background-color: #343a40;
+    border-color: rgba(0, 0, 0, .15);
+}
+
+.dropdown-menu-dark .dropdown-item {
+    color: #dee2e6;
+}
+
+.dropdown-menu-dark .dropdown-item:hover,
+.dropdown-menu-dark .dropdown-item:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .15);
+}
+
+.dropdown-menu-dark .dropdown-divider {
+    border-top-color: rgba(0, 0, 0, .15);
+}

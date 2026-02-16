@@ -29,6 +29,14 @@
                 </div>
             </a>
         </li>
+        <li class="lesson-item <?php echo ($activePage ?? '') === 'points' ? 'active' : ''; ?>">
+            <a href="<?php echo $baseUrl; ?>/aula-virtual/mis-puntos">
+                <div class="d-flex align-items-center">
+                    <i class="ri-coin-line lesson-icon" style="font-size: 18px;"></i> <!-- Points Icon -->
+                    <span>Mis Puntos</span>
+                </div>
+            </a>
+        </li>
         <li class="lesson-item <?php echo ($activePage ?? '') === 'certificates' ? 'active' : ''; ?>">
             <a href="<?php echo $baseUrl; ?>/aula-virtual/mis-certificados">
                 <div class="d-flex align-items-center">

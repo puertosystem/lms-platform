@@ -58,7 +58,7 @@
                     </div>
                     <div class="text-block">
                         <div class="edu-faq-content">
-                            <?php include $BASE_PATH . '/views/includes/faq/faq-central.php'; ?>
+                            <?php include $BASE_PATH . '/views/web/includes/faq/faq-central.php'; ?>
                         </div>
                     </div>
                 </div>

@@ -17,6 +17,24 @@ class ProfileController {
     }
 
     /**
+     * Muestra el historial de puntos del usuario
+     */
+    public function points($basePath, $baseUrl) {
+        $activePage = 'points';
+        $pageTitle = 'Mis Puntos';
+        include $basePath . '/views/classroom/points.php';
+    }
+
+    /**
+     * Muestra la tabla de distribución de puntos
+     */
+    public function earnPoints($basePath, $baseUrl) {
+        $activePage = 'points';
+        $pageTitle = 'Distribución de puntos';
+        include $basePath . '/views/classroom/earn_points.php';
+    }
+
+    /**
      * Muestra la lista de certificados del usuario
      */
     public function certificates($basePath, $baseUrl) {
