@@ -1,0 +1,39 @@
+/* Estilos para botones de redes sociales en la lista de instructores */
+.btn-social-facebook {
+    background-color: #3b5998 !important;
+    color: white !important;
+}
+
+.btn-social-twitter {
+    background-color: #55acee !important;
+    color: white !important;
+}
+
+.btn-social-linkedin {
+    background-color: #007bb5 !important;
+    color: white !important;
+}
+
+.btn-social-instagram {
+    background-color: #ac2bac !important;
+    color: white !important;
+}
+
+/* Estilos para el modal de edición de instructor */
+.instructor-photo-upload-container {
+    width: 200px;
+    height: 200px;
+    border-style: dashed;
+}
+
+/* Estilos para el modal de visualización */
+.instructor-view-photo {
+    max-height: 300px;
+}
+
+/* Estilos para el formulario de creación */
+.instructor-create-photo-preview {
+    width: 270px;
+    height: 320px;
+    border-style: dashed !important;
+}

@@ -20,31 +20,40 @@
                         </span>
                     </li>
                     <li>
-                        <span class="label"><i class="icon-62"></i>Instrutor:</span>
-                        <span class="value">Edward Norton</span>
+                        <span class="label"><i class="icon-62"></i>Instructor:</span>
+                        <span class="value">Isabel giovana colan rojas</span>
                     </li>
                     <li>
-                        <span class="label"><i class="icon-61"></i>Duration:</span>
-                        <span class="value">3 weeks</span>
+                        <span class="label"><i class="icon-61"></i>Fecha Inicio:</span>
+                        <span class="value">15 de Febrero, 2026</span>
+                    </li>
+                    <li>
+                        <span class="label"><i class="icon-61"></i>Duración:</span>
+                        <span class="value">5 Meses</span>
                     </li>
                     <li>
                         <span class="label">
                             <img class="svgInject" src="<?php echo $baseUrl; ?>/assets/images/svg-icons/books.svg" alt="book icon">
-                            Lessons:</span>
-                        <span class="value">8</span>
+                            Horas académicas:</span>
+                        <span class="value">576 Horas</span>
                     </li>
                     <li>
-                        <span class="label"><i class="icon-63"></i>Enrolled:</span>
-                        <span class="value">65 students</span>
+                        <span class="label"><i class="icon-64"></i>Créditos académicos:</span>
+                        <span class="value">32 Créditos</span>
+                    </li>
+                    <li>
+                        <span class="label"><i class="icon-63"></i>Inscritos:</span>
+                        <span class="value">0 Participantes</span>
                     </li>
                     <li>
                         <span class="label"><i class="icon-59"></i>Language:</span>
                         <span class="value">English</span>
                     </li>
                     <li>
-                        <span class="label"><i class="icon-64"></i>Certificate:</span>
-                        <span class="value">Yes</span>
+                        <span class="label"><i class="icon-64"></i>Certificación QR:</span>
+                        <span class="value">Sí</span>
                     </li>
+                    
                 </ul>
                 <div class="read-more-btn">
                     <a href="<?php echo $baseUrl; ?>/aula-virtual/curso/ver" class="edu-btn">Start Now <i class="icon-4"></i></a>

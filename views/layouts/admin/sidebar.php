@@ -1,8 +1,8 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?php echo $baseUrl; ?>/admin" class="brand-link">
-      <img src="<?php echo $baseUrl; ?>/assets/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="<?php echo $baseUrl; ?>/admin/dashboard" class="brand-link">
+      <img src="<?php echo $baseUrl; ?>/assets/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
       <span class="brand-text font-weight-light">LMS Admin</span>
     </a>
 
@@ -47,7 +47,7 @@
           
           <!-- Escritorio -->
           <li class="nav-item">
-            <a href="<?php echo $baseUrl; ?>/admin" class="nav-link <?php echo ($activePage ?? '') == 'dashboard' ? 'active' : ''; ?>">
+            <a href="<?php echo $baseUrl; ?>/admin/dashboard" class="nav-link <?php echo ($activePage ?? '') == 'dashboard' ? 'active' : ''; ?>">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>Escritorio</p>
             </a>
@@ -110,6 +110,30 @@
                 <a href="<?php echo $baseUrl; ?>/admin/cursos" class="nav-link <?php echo ($activePage ?? '') == 'courses-list' ? 'active' : ''; ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Lista de Cursos</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item <?php echo strpos(($activePage ?? ''), 'instructors') !== false ? 'menu-open' : ''; ?>">
+            <a href="#" class="nav-link <?php echo strpos(($activePage ?? ''), 'instructors') !== false ? 'active' : ''; ?>">
+              <i class="nav-icon fas fa-chalkboard-teacher"></i>
+              <p>
+                Gestión de Instructores
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo $baseUrl; ?>/admin/instructores/crear" class="nav-link <?php echo ($activePage ?? '') == 'instructors-create' ? 'active' : ''; ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Crear Instructor</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo $baseUrl; ?>/admin/instructores" class="nav-link <?php echo ($activePage ?? '') == 'instructors-list' ? 'active' : ''; ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Lista de Instructores</p>
                 </a>
               </li>
             </ul>

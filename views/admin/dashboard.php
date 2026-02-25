@@ -41,7 +41,7 @@
           <!-- small box -->
           <div class="small-box bg-success">
             <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
+              <h3>53<sup class="stat-percentage-symbol">%</sup></h3>
               <p>Tasa de Rebote</p>
             </div>
             <div class="icon">
@@ -86,3 +86,5 @@
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
+
+<link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/admin/custom/css/dashboard.css">

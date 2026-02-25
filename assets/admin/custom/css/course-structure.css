@@ -1,0 +1,45 @@
+ #lesson_type_modal .lesson-type-btn {
+   min-height: 120px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   white-space: normal;
+ }
+ #lesson_type_modal .lesson-type-btn > div {
+   text-align: center;
+   width: 100%;
+ }
+ #lesson_editor_container .card .card-header .card-tools .btn.btn-tool {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   height: 28px;
+ }
+ #lesson_editor_container .card .card-header .card-tools {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Modal de tipos de lección */
+#lesson_type_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1050;
+    overflow: auto;
+}
+
+.lesson-type-modal-wrapper {
+    min-height: 100%;
+}
+
+.lesson-type-modal-content {
+    max-width: 720px;
+    width: 100%;
+}

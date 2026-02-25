@@ -1,0 +1,8 @@
+/* Global Admin Layout Customizations */
+
+/* Sidebar Brand Logo Opacity */
+.brand-link .brand-image {
+    opacity: .8;
+}
+
+/* Add any other global layout overrides here */

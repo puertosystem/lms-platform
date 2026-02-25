@@ -27,7 +27,7 @@
             <form action="<?php echo $baseUrl; ?>/admin/cursos/guardar" method="POST" enctype="multipart/form-data">
               <div class="card-body">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-3">
                     <div class="form-group">
                       <label for="course_type">Tipo de curso</label>
                       <select class="form-control" id="course_type" name="course_type">
@@ -39,7 +39,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-3">
                     <div class="form-group">
                       <label for="level">Nivel</label>
                       <select class="form-control" id="level" name="level">
@@ -50,7 +50,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-3">
                     <div class="form-group">
                       <label for="modality">Modalidad</label>
                       <select class="form-control" id="modality" name="modality">
@@ -58,6 +58,16 @@
                         <option value="presencial">Presencial</option>
                         <option value="virtual">Virtual</option>
                         <option value="mixta">Mixta</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <label for="language">Idioma del curso</label>
+                      <select class="form-control" id="language" name="language">
+                        <option value="">Seleccionar</option>
+                        <option value="es">Español</option>
+                        <option value="en">Inglés</option>
                       </select>
                     </div>
                   </div>
@@ -81,6 +91,30 @@
                 <div class="form-group">
                   <label for="description">Descripción</label>
                   <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+                </div>
+
+                <div class="card mt-3">
+                  <div class="card-header">
+                    <h3 class="card-title">Diseño del Certificado</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label for="certificate_background">Imagen de Fondo</label>
+                      <div class="border border-dashed rounded d-flex align-items-center justify-content-center text-center bg-light certificate-upload-container">
+                        <div>
+                          <div class="mb-2">
+                            <i class="fas fa-cloud-upload-alt fa-2x text-secondary"></i>
+                          </div>
+                          <p class="mb-1">Haga clic para subir o arrastre y suelte</p>
+                          <p class="mb-2 text-muted">JPG, PNG (Recomendado: A4 horizontal)</p>
+                          <input type="file" id="certificate_background" name="certificate_background" accept=".jpg,.jpeg,.png" class="d-none">
+                          <button type="button" class="btn btn-outline-primary btn-sm" id="btn-select-image">
+                            Seleccionar imagen
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="row">
@@ -130,3 +164,6 @@
     </div>
   </section>
 </div>
+
+<link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/admin/custom/css/course-create.css">
+<script src="<?php echo $baseUrl; ?>/assets/admin/custom/js/course-create.js"></script>

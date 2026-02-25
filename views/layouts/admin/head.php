@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/admin/plugins/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/admin/dist/css/adminlte.min.css">
+  <!-- Custom Admin Layout Style -->
+  <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/admin/custom/css/admin-layout.css">
   <!-- Custom User Dropdown Style -->
   <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/admin/custom/css/user-dropdown.css">
   <!-- overlayScrollbars -->

@@ -101,6 +101,11 @@ switch ($route) {
 
     // --- RUTAS DEL ÁREA ADMINISTRATIVA ---
     case 'admin':
+    case 'admin/login':
+        require $BASE_PATH . '/app/Controllers/Admin/AuthController.php';
+        $controller = new \App\Controllers\Admin\AuthController();
+        $controller->login($BASE_PATH, $BASE_URL);
+        break;
     case 'admin/dashboard':
         require $BASE_PATH . '/app/Controllers/Admin/DashboardController.php';
         $controller = new \App\Controllers\Admin\DashboardController();
@@ -114,6 +119,16 @@ switch ($route) {
     case 'admin/usuarios/crear':
         require $BASE_PATH . '/app/Controllers/Admin/UsersController.php';
         $controller = new \App\Controllers\Admin\UsersController();
+        $controller->create($BASE_PATH, $BASE_URL);
+        break;
+    case 'admin/instructores':
+        require $BASE_PATH . '/app/Controllers/Admin/InstructorsController.php';
+        $controller = new \App\Controllers\Admin\InstructorsController();
+        $controller->index($BASE_PATH, $BASE_URL);
+        break;
+    case 'admin/instructores/crear':
+        require $BASE_PATH . '/app/Controllers/Admin/InstructorsController.php';
+        $controller = new \App\Controllers\Admin\InstructorsController();
         $controller->create($BASE_PATH, $BASE_URL);
         break;
     case 'admin/cursos/crear':

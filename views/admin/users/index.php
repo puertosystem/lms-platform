@@ -52,8 +52,8 @@
                     <td><span class="badge badge-success">Estudiante</span></td>
                     <td>Activo</td>
                     <td>
-                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#viewUserModal"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editUserModal"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-info btn-sm btn-view-user" data-toggle="modal" data-target="#viewUserModal" data-id="1"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-warning btn-sm btn-edit-user" data-toggle="modal" data-target="#editUserModal" data-id="1"><i class="fas fa-edit"></i></button>
                     </td>
                   </tr>
                   <tr>
@@ -63,8 +63,8 @@
                     <td><span class="badge badge-warning">Instructor</span></td>
                     <td>Activo</td>
                     <td>
-                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#viewUserModal"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editUserModal"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-info btn-sm btn-view-user" data-toggle="modal" data-target="#viewUserModal" data-id="2"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-warning btn-sm btn-edit-user" data-toggle="modal" data-target="#editUserModal" data-id="2"><i class="fas fa-edit"></i></button>
                     </td>
                   </tr>
                 </tbody>
@@ -281,6 +281,9 @@
     </div>
   </div>
 </div>
+
+<link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/admin/custom/css/users.css">
+<script src="<?php echo $baseUrl; ?>/assets/admin/custom/js/users.js"></script>
 
 <!-- Modal de Visualización -->
 <div class="modal fade" id="viewUserModal" tabindex="-1" role="dialog" aria-labelledby="viewUserModalLabel" aria-hidden="true">

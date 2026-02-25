@@ -1,0 +1,167 @@
+lms/
+│
+├── app/                                      # Lógica del Negocio (Backend PHP)
+│   ├── Controllers/                          # Controladores: Reciben peticiones del usuario
+│   │   ├── Admin/                            # Controladores del Panel Administrativo
+│   │   │   ├── AuthController.php            # Login y autenticación del admin
+│   │   │   ├── CoursesController.php         # Gestión de Cursos (CRUD)
+│   │   │   ├── DashboardController.php       # Pantalla principal del admin
+│   │   │   ├── InstructorsController.php     # Gestión de Instructores
+│   │   │   └── UsersController.php           # Gestión de Usuarios
+│   │   │
+│   │   ├── Classroom/                        # Controladores del Aula Virtual (Estudiantes)
+│   │   │   ├── AuthController.php            # Login de estudiantes
+│   │   │   ├── CourseController.php          # Visualización de cursos comprados
+│   │   │   ├── ProfileController.php         # Perfil del estudiante
+│   │   │   └── SettingsController.php        # Configuración de cuenta
+│   │   │
+│   │   └── Web/                              # Controladores del Sitio Web Público
+│   │       ├── AboutController.php           # Página "Sobre Nosotros"
+│   │       ├── BlogController.php            # Listado de noticias
+│   │       ├── BlogDetailsController.php     # Detalle de una noticia
+│   │       ├── CartController.php            # Carrito de compras
+│   │       ├── CheckoutController.php        # Proceso de pago
+│   │       ├── ContactController.php         # Página de contacto
+│   │       ├── CourseController.php          # Catálogo de cursos
+│   │       ├── CourseDetailsController.php   # Detalle de un curso
+│   │       ├── FaqController.php             # Preguntas frecuentes
+│   │       ├── HomeController.php            # Página de inicio (Landing)
+│   │       └── PublicProfileController.php   # Perfil público de usuarios
+│   │
+│   ├── Core/                                 # Núcleo del Framework
+│   │   ├── Database.php                      # Conexión a Base de Datos (PDO)
+│   │   └── ...                               # Otros archivos del núcleo
+│   │
+│   ├── DTOs/                                 # Data Transfer Objects (Objetos de datos)
+│   ├── Helpers/                              # Funciones de ayuda generales
+│   ├── Models/                               # Modelos: Interacción con la Base de Datos
+│   │   ├── Admin/                            # Modelos para lógica administrativa
+│   │   │   └── DashboardModel.php            # Datos del dashboard
+│   │   ├── Classroom/                        # Modelos para el aula virtual
+│   │   │   └── CourseModel.php               # Datos de cursos
+│   │   └── Web/                              # Modelos para el sitio público
+│   │       └── ExampleModel.php              # Modelo de ejemplo
+│   │
+│   ├── Services/                             # Servicios: Lógica de negocio compleja
+│   └── Validators/                           # Validadores de datos
+│
+├── assets/                                   # Recursos Estáticos (Frontend)
+│   ├── admin/                                # Recursos del Panel Admin (AdminLTE)
+│   │   ├── custom/                           # [IMPORTANTE] Nuestro código personalizado
+│   │   │   ├── css/                          # Estilos CSS propios
+│   │   │   │   ├── admin-layout.css          # Ajustes globales del diseño admin
+│   │   │   │   ├── course-create.css         # Estilos formulario crear curso
+│   │   │   │   ├── course-structure.css      # Estilos estructura del curso
+│   │   │   │   ├── dashboard.css             # Estilos del escritorio
+│   │   │   │   ├── instructors.css           # Estilos módulo instructores
+│   │   │   │   ├── user-dropdown.css         # Estilos menú de usuario
+│   │   │   │   └── users.css                 # Estilos módulo usuarios
+│   │   │   └── js/                           # Scripts JS propios
+│   │   │       ├── course-create.js          # Lógica crear curso
+│   │   │       ├── course-structure.js       # Lógica estructura curso
+│   │   │       ├── instructors.js            # Lógica instructores (eliminar/modales)
+│   │   │       ├── user-dropdown.js          # Lógica menú usuario
+│   │   │       └── users.js                  # Lógica usuarios (modales)
+│   │   │
+│   │   ├── dist/                             # Archivos base de AdminLTE (CSS/JS/Img)
+│   │   └── plugins/                          # Librerías externas (Bootstrap, jQuery, etc.)
+│   │
+│   ├── css/                                  # Estilos generales del sitio
+│   │   ├── app.css                           # Estilos principales
+│   │   ├── classroom-auth.css                # Estilos login aula
+│   │   ├── classroom-watch.css               # Estilos reproductor de cursos
+│   │   └── comments.css                      # Estilos de comentarios
+│   │
+│   ├── fonts/                                # Fuentes e iconos (Icomoon, Remixicon, Slick)
+│   ├── images/                               # Imágenes del sitio (Banners, Blog, etc.)
+│   └── js/                                   # Scripts del sitio público
+│
+├── template/                                 # Plantillas de referencia (HTML estático)
+│   └── sample/                               # Ejemplos de componentes Bootstrap
+│
+├── views/                                    # Vistas (HTML/Templates)
+│   ├── admin/                                # Vistas del Panel Administrativo
+│   │   ├── auth/                             # Autenticación Admin
+│   │   │   └── login.php                     # Login administrativo
+│   │   ├── courses/                          # Módulo de Cursos
+│   │   │   ├── create.php                    # Crear curso
+│   │   │   ├── material.php                  # Material del curso
+│   │   │   └── structure.php                 # Estructura del curso
+│   │   ├── instructors/                      # Módulo de Instructores
+│   │   │   ├── create.php                    # Crear instructor
+│   │   │   └── index.php                     # Listar instructores
+│   │   ├── users/                            # Módulo de Usuarios
+│   │   │   ├── create.php                    # Crear usuario
+│   │   │   └── index.php                     # Listar usuarios
+│   │   └── dashboard.php                     # Escritorio principal
+│   │
+│   ├── classroom/                            # Vistas del Aula Virtual
+│   │   ├── auth/                             # Autenticación Estudiantes
+│   │   │   └── login.php                     # Login estudiante
+│   │   ├── watch/                            # Reproductor de Cursos
+│   │   │   ├── partials/                     # Componentes del reproductor
+│   │   │   │   ├── header.php                # Cabecera reproductor
+│   │   │   │   ├── player.php                # Video player
+│   │   │   │   ├── sidebar-comments.php      # Barra de comentarios
+│   │   │   │   └── sidebar.php               # Barra lateral temario
+│   │   │   └── index.php                     # Vista principal reproductor
+│   │   ├── certificates.php                  # Certificados
+│   │   ├── earn_points.php                   # Puntos ganados
+│   │   ├── payments.php                      # Historial de pagos
+│   │   ├── points.php                        # Resumen de puntos
+│   │   ├── profile.php                       # Perfil de usuario
+│   │   ├── settings.php                      # Configuración
+│   │   └── wishlist.php                      # Lista de deseos
+│   │
+│   ├── layouts/                              # Plantillas Maestras (Headers/Footers)
+│   │   ├── admin/                            # Layouts Admin
+│   │   │   ├── control-sidebar.php           # Barra lateral derecha
+│   │   │   ├── footer.php                    # Pie de página admin
+│   │   │   ├── head.php                      # <head> HTML admin
+│   │   │   ├── header.php                    # Navbar superior
+│   │   │   └── sidebar.php                   # Menú lateral principal
+│   │   ├── classroom/                        # Layouts Aula Virtual
+│   │   │   ├── footer.php
+│   │   │   ├── head.php
+│   │   │   ├── header.php
+│   │   │   └── sidebar.php
+│   │   └── web/                              # Layouts Web Pública
+│   │       ├── footer.php
+│   │       └── header.php
+│   │
+│   └── web/                                  # Vistas del Sitio Público
+│       ├── blog/                             # Sección Blog
+│       │   ├── details.php                   # Detalle noticia
+│       │   └── index.php                     # Lista noticias
+│       ├── courses/                          # Sección Cursos
+│       │   ├── partials/                     # Fragmentos reutilizables curso
+│       │   ├── details.php                   # Detalle curso (Landing)
+│       │   └── index.php                     # Catálogo cursos
+│       ├── guides/                           # Guías
+│       │   └── purchase-guide.php            # Guía de compra
+│       ├── home/                             # Página de Inicio
+│       │   ├── about.php                     # Sobre nosotros
+│       │   ├── contact.php                   # Contacto
+│       │   ├── faq.php                       # Preguntas frecuentes
+│       │   └── index.php                     # Portada
+│       ├── includes/                         # Inclusiones varias
+│       ├── instructors/                      # Sección Instructores
+│       │   ├── details.php                   # Perfil público instructor
+│       │   └── index.php                     # Lista instructores
+│       ├── privacy/                          # Páginas legales
+│       │   ├── cookies.php                   # Política cookies
+│       │   ├── index.php                     # Índice privacidad
+│       │   ├── security.php                  # Seguridad
+│       │   └── terms.php                     # Términos y condiciones
+│       ├── shop/                             # Tienda / Checkout
+│       │   ├── checkout.php                  # Pantalla de pago
+│       │   └── index.php                     # Tienda general
+│       └── user/                             # Vistas de usuario público
+│           └── public.php                    # Perfil público
+│
+├── .gitignore                                # Archivos ignorados por Git
+├── .htaccess                                 # Configuración del servidor Apache
+├── estructura_proyecto.txt                   # Mapa del proyecto (Este archivo)
+├── index.php                                 # Punto de entrada principal (Router)
+├── LICENSE                                   # Licencia del proyecto
+└── README.md                                 # Información general del proyecto
