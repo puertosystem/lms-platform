@@ -9,11 +9,19 @@
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $baseUrl; ?>/assets/images/favicon.png">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/vendor/icomoon.css">
-    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/vendor/remixicon.css">
-    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/app.css">
-    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/classroom-auth.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/template/edu/edublink/assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/template/edu/edublink/assets/css/vendor/icomoon.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/template/edu/edublink/assets/css/vendor/remixicon.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/template/edu/edublink/assets/css/vendor/magnifypopup.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/template/edu/edublink/assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/template/edu/edublink/assets/css/vendor/animation.css">
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/template/edu/edublink/assets/css/vendor/jqueru-ui-min.css">
+    
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/template/edu/edublink/assets/css/app.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="<?php echo $baseUrl; ?>/assets/css/classroom-custom.css">
 </head>
 <body>
 
@@ -22,7 +30,7 @@
             <div class="login-content">
                 <div class="login-logo">
                     <a href="<?php echo $baseUrl; ?>">
-                        <img src="<?php echo $baseUrl; ?>/assets/images/logo/logo-dark.png" alt="Logo" style="max-height: 50px;">
+                        <img src="<?php echo $baseUrl; ?>/assets/images/logo/logo-dark.png" alt="Logo">
                     </a>
                 </div>
                 
@@ -49,8 +57,8 @@
                     </div>
                 </form>
 
-                <div id="login-success-msg" style="display:none;" class="text-center mt-5">
-                    <h4 class="title text-success" style="color: #1ab69d;">¡Bienvenido!</h4>
+                <div id="login-success-msg">
+                    <h4 class="title text-success">¡Bienvenido!</h4>
                     <p>Sesión iniciada correctamente.</p>
                     <p>Redirigiendo a tu perfil...</p>
                 </div>
@@ -62,7 +70,7 @@
         
         <div class="col-lg-6 login-illustration-section d-none d-lg-flex">
             <!-- Using a placeholder illustration that fits education theme -->
-            <img src="<?php echo $baseUrl; ?>/assets/images/banner/banner-chart.png" alt="Login Illustration">
+            <img src="<?php echo $baseUrl; ?>/assets/images/banner/aulavirtual.jpg" alt="Login Illustration">
         </div>
     </div>
 

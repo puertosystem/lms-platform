@@ -1,8 +1,60 @@
-/* Global Admin Layout Customizations */
+/* Global Admin Layout Styles */
 
-/* Sidebar Brand Logo Opacity */
-.brand-link .brand-image {
-    opacity: .8;
+/* Profile Image Upload */
+.profile-img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #d2d6de;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Add any other global layout overrides here */
+.profile-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.profile-img-container:hover .profile-img-overlay {
+    opacity: 1;
+}
+
+.profile-img-overlay i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* Hide file input */
+#avatar-upload {
+    display: none;
+}
+
+/* Form Section Headers */
+.form-section-header {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-weight: 600;
+}

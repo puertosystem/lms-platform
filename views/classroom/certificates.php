@@ -3,27 +3,29 @@
 <!-- Header -->
 <?php include $basePath . '/views/layouts/classroom/header.php'; ?>
 
-<div class="classroom-wrapper">
+<div class="classroom-wrapper classroom-certificates-page">
     <!-- Sidebar -->
     <?php include $basePath . '/views/layouts/classroom/sidebar.php'; ?>
 
     <!-- Main Content -->
     <main class="classroom-content">
-        <div class="container-fluid p-4">
-            <h2 class="mb-4 fw-bold">Mis certificados</h2>
+        <div class="container-fluid">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="mb-4 fw-bold">Mis certificados</h2>
 
-            <!-- Tabs -->
-            <ul class="nav nav-tabs" id="certificateTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="courses-tab" data-bs-toggle="tab" data-bs-target="#courses" type="button" role="tab" aria-controls="courses" aria-selected="true">Cursos</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="paths-tab" data-bs-toggle="tab" data-bs-target="#paths" type="button" role="tab" aria-controls="paths" aria-selected="false">Rutas</button>
-                </li>
-            </ul>
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs" id="certificateTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-bold" id="courses-tab" data-bs-toggle="tab" data-bs-target="#courses" type="button" role="tab" aria-controls="courses" aria-selected="true">Cursos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fw-bold" id="paths-tab" data-bs-toggle="tab" data-bs-target="#paths" type="button" role="tab" aria-controls="paths" aria-selected="false">Rutas</button>
+                        </li>
+                    </ul>
 
-            <!-- Tab Content -->
-            <div class="tab-content" id="certificateTabsContent">
+                    <!-- Tab Content -->
+                    <div class="tab-content pt-4" id="certificateTabsContent">
                 <!-- Cursos Tab -->
                 <div class="tab-pane fade show active" id="courses" role="tabpanel" aria-labelledby="courses-tab">
                     
@@ -31,7 +33,7 @@
                     <div class="row g-5">
                         <!-- Certificado 1 -->
                         <div class="col-md-6 col-lg-4">
-                            <div class="edu-course course-style-1 hover-button-bg-white" style="border: 1px solid #eee; border-radius: 8px;">
+                            <div class="edu-course course-style-1 hover-button-bg-white">
                                 <div class="inner">
                                     <div class="thumbnail">
                                         <a href="<?php echo $baseUrl; ?>/aula-virtual/curso/ver">
@@ -59,8 +61,8 @@
                                         <ul class="course-meta">
                                             <li><i class="ri-calendar-line"></i> 15 Ene, 2024</li>
                                         </ul>
-                                        <button class="btn btn-primary w-100 btn-sm mt-3">
-                                            <i class="ri-download-line me-2"></i>Descargar Certificado
+                                        <button class="edu-btn btn-small w-100 mt-3">
+                                            Descargar Certificado <i class="ri-download-line ms-2"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -69,7 +71,7 @@
 
                         <!-- Certificado 2 -->
                         <div class="col-md-6 col-lg-4">
-                            <div class="edu-course course-style-1 hover-button-bg-white" style="border: 1px solid #eee; border-radius: 8px;">
+                            <div class="edu-course course-style-1 hover-button-bg-white">
                                 <div class="inner">
                                     <div class="thumbnail">
                                         <a href="<?php echo $baseUrl; ?>/aula-virtual/curso/ver">
@@ -97,8 +99,8 @@
                                         <ul class="course-meta">
                                             <li><i class="ri-calendar-line"></i> 20 Dic, 2023</li>
                                         </ul>
-                                        <button class="btn btn-primary w-100 btn-sm mt-3">
-                                            <i class="ri-download-line me-2"></i>Descargar Certificado
+                                        <button class="edu-btn btn-small w-100 mt-3">
+                                            Descargar Certificado <i class="ri-download-line ms-2"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -107,7 +109,7 @@
 
                         <!-- Certificado 3 -->
                         <div class="col-md-6 col-lg-4">
-                            <div class="edu-course course-style-1 hover-button-bg-white" style="border: 1px solid #eee; border-radius: 8px;">
+                            <div class="edu-course course-style-1 hover-button-bg-white">
                                 <div class="inner">
                                     <div class="thumbnail">
                                         <a href="<?php echo $baseUrl; ?>/aula-virtual/curso/ver">
@@ -135,8 +137,8 @@
                                         <ul class="course-meta">
                                             <li><i class="ri-calendar-line"></i> 10 Nov, 2023</li>
                                         </ul>
-                                        <button class="btn btn-primary w-100 btn-sm mt-3">
-                                            <i class="ri-download-line me-2"></i>Descargar Certificado
+                                        <button class="edu-btn btn-small w-100 mt-3">
+                                            Descargar Certificado <i class="ri-download-line ms-2"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -165,10 +167,12 @@
                         </div>
                         <h3 class="h4">Aún no has completado ninguna ruta</h3>
                         <p class="text-muted mb-4">Las rutas de aprendizaje te guían a través de una serie de cursos para dominar una habilidad completa.</p>
-                        <a href="<?php echo $baseUrl; ?>/cursos" class="btn btn-primary">Explorar Rutas</a>
+                        <a href="<?php echo $baseUrl; ?>/cursos" class="edu-btn btn-medium">Explorar Rutas <i class="icon-4"></i></a>
                     </div>
                 </div>
+                </div>
             </div>
+        </div>
         </div>
     </main>
 </div>

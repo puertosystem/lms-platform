@@ -22,61 +22,430 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Usuarios Registrados</h3>
-              <div class="card-tools">
-                  <a href="<?php echo $baseUrl; ?>/admin/usuarios/crear" class="btn btn-primary btn-sm">
-                      <i class="fas fa-plus"></i> Nuevo Usuario
+          
+          <div class="card card-primary card-outline card-outline-tabs">
+            <div class="card-header p-0 border-bottom-0">
+              <ul class="nav nav-tabs" id="users-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="students-tab" data-toggle="pill" href="#students" role="tab" aria-controls="students" aria-selected="true">
+                    <i class="fas fa-user-graduate mr-1"></i> Clientes (Estudiantes)
                   </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="instructors-tab" data-toggle="pill" href="#instructors" role="tab" aria-controls="instructors" aria-selected="false">
+                    <i class="fas fa-chalkboard-teacher mr-1"></i> Profesores (Instructores)
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="admins-tab" data-toggle="pill" href="#admins" role="tab" aria-controls="admins" aria-selected="false">
+                    <i class="fas fa-user-shield mr-1"></i> Usuarios Administrativos
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="users-tabs-content">
+                
+                <!-- Tab: Estudiantes -->
+                <div class="tab-pane fade show active" id="students" role="tabpanel" aria-labelledby="students-tab">
+                   <div class="d-flex justify-content-between mb-3 align-items-center">
+                      <h4>Lista de Estudiantes</h4>
+                      <div class="d-flex">
+                        <div class="input-group input-group-sm mr-2" style="width: 250px;">
+                          <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar estudiante...">
+                          <div class="input-group-append">
+                            <button type="submit" class="btn btn-default">
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="<?php echo $baseUrl; ?>/admin/usuarios/crear?role=student" class="btn btn-primary btn-sm">
+                            <i class="fas fa-plus"></i> Nuevo Estudiante
+                        </a>
+                      </div>
+                   </div>
+                   <div class="table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Estudiante</th>
+                          <th>Email</th>
+                          <th>Cursos Inscritos</th>
+                          <th>Estado</th>
+                          <th>Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Juan Perez</td>
+                          <td>juan@example.com</td>
+                          <td>3</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user" data-toggle="modal" data-target="#viewUserModal" data-id="1"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user" data-toggle="modal" data-target="#editUserModal" data-id="1"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Carlos Ruiz</td>
+                          <td>carlos.ruiz@email.com</td>
+                          <td>1</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Ana Gomez</td>
+                          <td>ana.gomez@email.com</td>
+                          <td>5</td>
+                          <td><span class="badge badge-warning">Pendiente</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Luis Torres</td>
+                          <td>luis.torres@email.com</td>
+                          <td>2</td>
+                          <td><span class="badge badge-danger">Inactivo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>Sofia Mendez</td>
+                          <td>sofia.m@email.com</td>
+                          <td>4</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td>Elena Blanco</td>
+                          <td>elena.b@email.com</td>
+                          <td>2</td>
+                          <td><span class="badge badge-secondary">Inactivo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td>Pedro Sanchez</td>
+                          <td>pedro.s@email.com</td>
+                          <td>6</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td>Clara Diaz</td>
+                          <td>clara.d@email.com</td>
+                          <td>1</td>
+                          <td><span class="badge badge-warning">Pendiente</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td>Miguel Angel</td>
+                          <td>miguel.a@email.com</td>
+                          <td>0</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>16</td>
+                          <td>Patricia Vega</td>
+                          <td>patricia.v@email.com</td>
+                          <td>3</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="card-footer clearfix">
+                    <ul class="pagination pagination-sm m-0 float-right">
+                      <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <!-- Tab: Instructores -->
+                <div class="tab-pane fade" id="instructors" role="tabpanel" aria-labelledby="instructors-tab">
+                   <div class="d-flex justify-content-between mb-3 align-items-center">
+                      <h4>Lista de Instructores</h4>
+                      <div class="d-flex">
+                        <div class="input-group input-group-sm mr-2" style="width: 250px;">
+                          <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar instructor...">
+                          <div class="input-group-append">
+                            <button type="submit" class="btn btn-default">
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="<?php echo $baseUrl; ?>/admin/usuarios/crear?role=instructor" class="btn btn-primary btn-sm">
+                            <i class="fas fa-plus"></i> Nuevo Instructor
+                        </a>
+                      </div>
+                   </div>
+                   <div class="table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Instructor</th>
+                          <th>Email</th>
+                          <th>Especialidad</th>
+                          <th>Cursos Creados</th>
+                          <th>Estado</th>
+                          <th>Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2</td>
+                          <td>Maria Lopez</td>
+                          <td>maria@example.com</td>
+                          <td>Desarrollo Web</td>
+                          <td>5</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user" data-toggle="modal" data-target="#viewUserModal" data-id="2"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user" data-toggle="modal" data-target="#editUserModal" data-id="2"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>Roberto Diaz</td>
+                          <td>roberto.d@email.com</td>
+                          <td>Marketing Digital</td>
+                          <td>2</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>Laura Castillo</td>
+                          <td>laura.c@email.com</td>
+                          <td>Diseño Gráfico</td>
+                          <td>8</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>17</td>
+                          <td>Daniel Romero</td>
+                          <td>daniel.r@email.com</td>
+                          <td>Desarrollo Mobile</td>
+                          <td>3</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>18</td>
+                          <td>Carmen Ruiz</td>
+                          <td>carmen.r@email.com</td>
+                          <td>Data Science</td>
+                          <td>4</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>19</td>
+                          <td>Alejandro Sanz</td>
+                          <td>alejandro.s@email.com</td>
+                          <td>DevOps</td>
+                          <td>1</td>
+                          <td><span class="badge badge-warning">Pendiente</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                              <button class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="card-footer clearfix">
+                    <ul class="pagination pagination-sm m-0 float-right">
+                      <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Tab: Administrativos -->
+                <div class="tab-pane fade" id="admins" role="tabpanel" aria-labelledby="admins-tab">
+                   <div class="d-flex justify-content-between mb-3 align-items-center">
+                      <h4>Usuarios del Sistema</h4>
+                      <div class="d-flex">
+                        <div class="input-group input-group-sm mr-2" style="width: 250px;">
+                          <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar admin...">
+                          <div class="input-group-append">
+                            <button type="submit" class="btn btn-default">
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <a href="<?php echo $baseUrl; ?>/admin/usuarios/crear?role=admin" class="btn btn-primary btn-sm">
+                            <i class="fas fa-plus"></i> Nuevo Admin
+                        </a>
+                      </div>
+                   </div>
+                   <div class="table-responsive p-0">
+                    <table class="table table-hover text-nowrap">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Usuario</th>
+                          <th>Email</th>
+                          <th>Rol</th>
+                          <th>Último Acceso</th>
+                          <th>Estado</th>
+                          <th>Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>3</td>
+                          <td>Admin General</td>
+                          <td>admin@lms.com</td>
+                          <td><span class="badge badge-danger">Super Admin</span></td>
+                          <td>Hace 2 horas</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user" data-toggle="modal" data-target="#viewUserModal" data-id="3"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user" data-toggle="modal" data-target="#editUserModal" data-id="3"><i class="fas fa-edit"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>Soporte Técnico</td>
+                          <td>soporte@lms.com</td>
+                          <td><span class="badge badge-info">Soporte</span></td>
+                          <td>Ayer</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td>Editor Blog</td>
+                          <td>editor@lms.com</td>
+                          <td><span class="badge badge-secondary">Editor</span></td>
+                          <td>Hace 5 días</td>
+                          <td><span class="badge badge-warning">Inactivo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>20</td>
+                          <td>Gestor Pagos</td>
+                          <td>pagos@lms.com</td>
+                          <td><span class="badge badge-info">Finanzas</span></td>
+                          <td>Hace 1 hora</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>21</td>
+                          <td>Auditor</td>
+                          <td>auditor@lms.com</td>
+                          <td><span class="badge badge-secondary">Auditoría</span></td>
+                          <td>Hace 3 días</td>
+                          <td><span class="badge badge-success">Activo</span></td>
+                          <td>
+                              <button class="btn btn-info btn-sm btn-view-user"><i class="fas fa-eye"></i></button>
+                              <button class="btn btn-warning btn-sm btn-edit-user"><i class="fas fa-edit"></i></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="card-footer clearfix">
+                    <ul class="pagination pagination-sm m-0 float-right">
+                      <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                    </ul>
+                  </div>
+                </div>
+
               </div>
             </div>
-            <!-- /.card-header -->
-            <div class="card-body table-responsive p-0">
-              <table class="table table-hover text-nowrap">
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Usuario</th>
-                    <th>Email</th>
-                    <th>Rol</th>
-                    <th>Estado</th>
-                    <th>Acciones</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Juan Perez</td>
-                    <td>juan@example.com</td>
-                    <td><span class="badge badge-success">Estudiante</span></td>
-                    <td>Activo</td>
-                    <td>
-                        <button class="btn btn-info btn-sm btn-view-user" data-toggle="modal" data-target="#viewUserModal" data-id="1"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm btn-edit-user" data-toggle="modal" data-target="#editUserModal" data-id="1"><i class="fas fa-edit"></i></button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Maria Lopez</td>
-                    <td>maria@example.com</td>
-                    <td><span class="badge badge-warning">Instructor</span></td>
-                    <td>Activo</td>
-                    <td>
-                        <button class="btn btn-info btn-sm btn-view-user" data-toggle="modal" data-target="#viewUserModal" data-id="2"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning btn-sm btn-edit-user" data-toggle="modal" data-target="#editUserModal" data-id="2"><i class="fas fa-edit"></i></button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- /.card-body -->
+            <!-- /.card -->
           </div>
-          <!-- /.card -->
         </div>
       </div>
     </div>
   </section>
+
 </div>
 
 <!-- Modal de Edición -->

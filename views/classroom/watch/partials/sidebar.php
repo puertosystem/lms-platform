@@ -36,7 +36,7 @@ $modules = [
 <aside class="classroom-sidebar">
     <div class="lesson-search">
         <input type="text" placeholder="Buscar contenido de cursos">
-        <i class="icon-2" style="position: absolute; right: 30px; top: 25px; color: #999;"></i>
+        <i class="icon-2 lesson-search-icon"></i>
     </div>
     
     <div class="accordion" id="courseAccordion">
@@ -59,12 +59,12 @@ $modules = [
                                         <span><?php echo $lesson['title']; ?></span>
                                     </div>
                                     <?php if($lesson['completed']): ?>
-                                    <i class="icon-76 lesson-check" style="color: var(--color-primary);"></i>
+                                    <i class="icon-76 lesson-check lesson-check-active"></i>
                                     <?php else: ?>
-                                    <i class="ri-checkbox-blank-circle-line lesson-check" style="color: #ddd;"></i>
+                                    <i class="ri-checkbox-blank-circle-line lesson-check lesson-check-inactive"></i>
                                     <?php endif; ?>
                                 </div>
-                                <span style="font-size: 12px; color: #999; margin-left: 34px; display: block;"><?php echo $lesson['duration']; ?></span>
+                                <span class="lesson-duration"><?php echo $lesson['duration']; ?></span>
                             </a>
                         </li>
                         <?php endforeach; ?>

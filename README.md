@@ -4,7 +4,7 @@ Plataforma de Gestión de Aprendizaje (LMS) desarrollada a medida en PHP, diseñ
 
 ## 📋 Descripción del Proyecto
 
-Este proyecto es una aplicación web completa que gestiona tanto la parte pública (venta de cursos, blog, contacto) como el área privada de estudiantes (Aula Virtual) y la administración. Está construido siguiendo el patrón de arquitectura **MVC (Modelo-Vista-Controlador)** sin depender de frameworks pesados, garantizando un rendimiento óptimo y facilidad de personalización.
+Este proyecto es una aplicación web completa que gestiona tanto la parte pública (venta de cursos, blog, contacto) como el área privada de estudiantes (Aula Virtual) y el área de administración. Está construido siguiendo el patrón de arquitectura **MVC (Modelo-Vista-Controlador)** sin depender de frameworks pesados, garantizando un rendimiento óptimo y facilidad de personalización.
 
 ## � Características Principales
 
@@ -22,6 +22,13 @@ Este proyecto es una aplicación web completa que gestiona tanto la parte públi
 - **Certificados:** Generación y descarga de certificados al completar cursos.
 - **Lista de Deseos:** Guardado de cursos de interés.
 - **Historial de Pagos:** Registro de transacciones y facturas.
+
+### 👩‍💼 Área de Administración
+- **Dashboard:** Resumen de estadísticas y gestión general.
+- **Gestión de Usuarios:** CRUD de estudiantes y administradores.
+- **Gestión de Cursos:** CRUD de cursos y módulos.
+- **Comentarios y Respuestas:** Moderación y gestión de interacciones en el foro.
+- **Reportes y Analytics:** Análisis de ventas, progreso de estudiantes y más.
 
 ## 🛠️ Estructura Técnica
 
@@ -57,6 +64,7 @@ El proyecto está organizado modularmente para facilitar el mantenimiento:
 4. **Ejecución:**
    - Acceder a `http://localhost/lms` para la web pública.
    - Acceder a `http://localhost/lms/aula-virtual` para el login de estudiantes.
+   - Acceder a `http://localhost/lms/admin` para el login de administradores.
 
 ## 📝 Estado Actual
 - **UI/UX:** Diseño responsive implementado en Aula Virtual y Web Pública.

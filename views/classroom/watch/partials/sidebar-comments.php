@@ -5,9 +5,9 @@
             <button class="btn-send"><i class="ri-send-plane-fill"></i></button>
         </div>
         <div class="comment-filters d-flex gap-2">
-            <button class="btn btn-sm btn-filter active">Más votados</button>
-            <button class="btn btn-sm btn-filter">Nuevos</button>
-            <button class="btn btn-sm btn-filter">Favoritos</button>
+            <button class="edu-btn btn-border btn-small active">Más votados</button>
+            <button class="edu-btn btn-border btn-small">Nuevos</button>
+            <button class="edu-btn btn-border btn-small">Favoritos</button>
         </div>
     </div>
     

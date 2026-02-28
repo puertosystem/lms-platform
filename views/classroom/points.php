@@ -3,28 +3,30 @@
 <!-- Header -->
 <?php include $basePath . '/views/layouts/classroom/header.php'; ?>
 
-<div class="classroom-wrapper">
+<div class="classroom-wrapper classroom-points-page">
     <!-- Sidebar -->
     <?php include $basePath . '/views/layouts/classroom/sidebar.php'; ?>
 
     <!-- Main Content -->
     <main class="classroom-content" id="main-content">
-        <div class="container-fluid p-4">
+        <div class="container-fluid">
             
-            <h2 class="mb-4 fw-bold">Tus Puntos</h2>
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="mb-4 fw-bold">Tus Puntos</h2>
 
-            <!-- Tabs -->
-            <ul class="nav nav-tabs mb-4">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" onclick="return false;">Mis Puntos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="<?php echo $baseUrl; ?>/aula-virtual/como-conseguir-puntos">Distribución de Puntos</a>
-                </li>
-            </ul>
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" href="#" onclick="return false;">Mis Puntos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="<?php echo $baseUrl; ?>/aula-virtual/como-conseguir-puntos">Distribución de Puntos</a>
+                        </li>
+                    </ul>
 
-            <!-- Content -->
-            <div class="tab-content">
+                    <!-- Content -->
+                    <div class="tab-content">
                 <div class="tab-pane fade show active">
                     
                     <!-- Header Section -->
@@ -36,7 +38,7 @@
                         
                         <div class="points-badge d-flex align-items-center bg-light p-3 rounded-3 border">
                             <div class="icon me-3">
-                                <i class="ri-coin-fill" style="font-size: 2.5rem; color: #f8b80e;"></i>
+                                <i class="ri-coin-fill points-icon"></i>
                             </div>
                             <div class="content text-end">
                                 <span class="d-block text-muted small text-uppercase fw-bold">Saldo Actual</span>
@@ -110,8 +112,9 @@
                         </table>
                     </div>
                 </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </main>
 </div>

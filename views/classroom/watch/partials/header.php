@@ -19,7 +19,7 @@
         
         <!-- Toggle Comments -->
         <button class="btn btn-link text-white me-3" id="toggle-comments" title="Mostrar/Ocultar Comentarios">
-            <i class="ri-chat-3-line" style="font-size: 24px;"></i>
+            <i class="ri-chat-3-line toggle-comments-icon"></i>
         </button>
 
         <a href="<?php echo $baseUrl; ?>/aula-virtual/mi-perfil" class="btn-close-classroom">

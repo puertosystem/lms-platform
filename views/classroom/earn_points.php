@@ -3,28 +3,29 @@
 <!-- Header -->
 <?php include $basePath . '/views/layouts/classroom/header.php'; ?>
 
-<div class="classroom-wrapper">
+<div class="classroom-wrapper classroom-points-page">
     <!-- Sidebar -->
     <?php include $basePath . '/views/layouts/classroom/sidebar.php'; ?>
 
     <!-- Main Content -->
     <main class="classroom-content" id="main-content">
-        <div class="container-fluid p-4">
-            
-            <h2 class="mb-4 fw-bold">Tus Puntos</h2>
+        <div class="container-fluid">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="mb-4 fw-bold">Tus Puntos</h2>
 
-            <!-- Tabs -->
-            <ul class="nav nav-tabs mb-4">
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="<?php echo $baseUrl; ?>/aula-virtual/mis-puntos">Mis Puntos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" onclick="return false;">Distribución de Puntos</a>
-                </li>
-            </ul>
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark fw-bold" href="<?php echo $baseUrl; ?>/aula-virtual/mis-puntos">Mis Puntos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" href="#" onclick="return false;">Distribución de Puntos</a>
+                        </li>
+                    </ul>
 
-            <!-- Content -->
-            <div class="tab-content">
+                    <!-- Content -->
+                    <div class="tab-content">
                 <div class="tab-pane fade show active">
                     
                     <!-- Header Section -->
@@ -103,10 +104,11 @@
                         </table>
                     </div>
                 </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-    </main>
+    </div>
 </div>
 
 <?php include $basePath . '/views/layouts/classroom/footer.php'; ?>
