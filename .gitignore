@@ -1,5 +1,4 @@
 template/
-assets/assets/
 vendor/
 node_modules/
 *.log
